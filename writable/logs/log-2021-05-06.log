@@ -1,0 +1,9 @@
+CRITICAL - 2021-05-06 22:52:26 --> Invalid file: {0}
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('opciones/formac...')
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('opciones/formac...', Array, true)
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Formacion.php(7): view('opciones/formac...')
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Formacion->index()
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formacion))
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}

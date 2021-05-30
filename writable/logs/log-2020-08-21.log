@@ -1,0 +1,10 @@
+CRITICAL - 2020-08-21 23:28:35 --> Undefined variable: data_user
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Views\usuario\perfil.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 8, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/perfil', Array, true)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(82): view('usuario/perfil')
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->versesion()
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

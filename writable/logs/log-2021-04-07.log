@@ -1,0 +1,62 @@
+CRITICAL - 2021-04-07 00:04:44 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('Novedades')
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(789): CodeIgniter\Router\Router->handle('Novedades')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-07 21:11:18 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('Novedades')
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(789): CodeIgniter\Router\Router->handle('Novedades')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-07 21:11:50 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/VerNove...', Array, true)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Novedades.php(16): view('usuario/VerNove...', Array)
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Novedades->index()
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Novedades))
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-04-07 21:17:05 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/VerNove...', Array, true)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Novedades.php(16): view('usuario/VerNove...', Array)
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Novedades->index()
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Novedades))
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-04-07 21:44:15 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/verNove...', Array, true)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Novedades.php(16): view('usuario/verNove...', Array)
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Novedades->index()
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Novedades))
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-04-07 22:52:06 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/verNove...', Array, true)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Novedades.php(16): view('usuario/verNove...', Array)
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Novedades->index()
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Novedades))
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-04-07 22:54:02 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/verNove...', Array, true)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Novedades.php(16): view('usuario/verNove...', Array)
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Novedades->index()
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Novedades))
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-04-07 22:56:39 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/verNove...', Array, true)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Novedades.php(16): view('usuario/verNove...', Array)
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Novedades->index()
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Novedades))
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}

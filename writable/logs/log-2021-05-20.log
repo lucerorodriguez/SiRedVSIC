@@ -1,0 +1,130 @@
+CRITICAL - 2021-05-20 00:14:18 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Views\usuario\updateInvestigacion.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/updateI...', Array, true)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(317): view('usuario/updateI...', Array)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->modificarInvestigacion('DataTables', 'datatables.min....')
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-20 00:14:18 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Views\usuario\updateInvestigacion.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/updateI...', Array, true)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(317): view('usuario/updateI...', Array)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->modificarInvestigacion('DataTables', 'datatables.min....')
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-20 00:15:22 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Views\usuario\updateInvestigacion.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/updateI...', Array, true)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(317): view('usuario/updateI...', Array)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->modificarInvestigacion('DataTables', 'datatables.min....')
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-20 00:15:22 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Views\usuario\updateInvestigacion.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/updateI...', Array, true)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(317): view('usuario/updateI...', Array)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->modificarInvestigacion('DataTables', 'datatables.min....')
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-20 00:15:31 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Views\usuario\updateInvestigacion.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/updateI...', Array, true)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(317): view('usuario/updateI...', Array)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->modificarInvestigacion('DataTables', 'datatables.min....')
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-20 00:15:31 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Views\usuario\updateInvestigacion.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/updateI...', Array, true)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(317): view('usuario/updateI...', Array)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->modificarInvestigacion('DataTables', 'datatables.min....')
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-20 00:15:32 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Views\usuario\updateInvestigacion.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/updateI...', Array, true)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(317): view('usuario/updateI...', Array)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->modificarInvestigacion('DataTables', 'datatables.min....')
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-20 00:16:27 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Views\usuario\updateInvestigacion.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/updateI...', Array, true)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(317): view('usuario/updateI...', Array)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->modificarInvestigacion('DataTables', 'datatables.min....')
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-20 00:16:27 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Views\usuario\updateInvestigacion.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/updateI...', Array, true)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(317): view('usuario/updateI...', Array)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->modificarInvestigacion('DataTables', 'datatables.min....')
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-20 00:23:53 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Views\usuario\updateInvestigacion.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/updateI...', Array, true)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(317): view('usuario/updateI...', Array)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->modificarInvestigacion('DataTables', 'datatables.min....')
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-20 00:23:54 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Views\usuario\updateInvestigacion.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/updateI...', Array, true)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(317): view('usuario/updateI...', Array)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->modificarInvestigacion('DataTables', 'datatables.min....')
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-20 00:23:54 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Views\usuario\updateInvestigacion.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/updateI...', Array, true)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(317): view('usuario/updateI...', Array)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->modificarInvestigacion('DataTables', 'datatables.min....')
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-20 00:23:54 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Views\usuario\updateInvestigacion.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/updateI...', Array, true)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(317): view('usuario/updateI...', Array)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->modificarInvestigacion('DataTables', 'datatables.min....')
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

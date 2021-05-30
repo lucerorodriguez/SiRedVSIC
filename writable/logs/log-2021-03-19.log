@@ -1,0 +1,107 @@
+CRITICAL - 2021-03-19 00:21:13 --> Class 'App\Controllers\SitiosModel' not found
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->listaSitios()
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-03-19 00:24:22 --> Undefined variable: investigaciones
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(317): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 317, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->listaSitios()
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-03-19 00:27:14 --> Undefined variable: publicaciones
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Views\usuario\listaSitios.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/listasi...', Array, true)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(317): view('usuario/listasi...', Array)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->listaSitios()
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-03-19 00:28:01 --> Undefined variable: publicaciones
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Views\usuario\listaSitios.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/listasi...', Array, true)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(317): view('usuario/listasi...', Array)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->listaSitios()
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-03-19 01:13:52 --> Operand should contain 1 column(s)
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `in...')
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `in...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `in...')
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseBuilder.php(2234): CodeIgniter\Database\BaseConnection->query('INSERT INTO `in...', Array, false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Model.php(729): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(186): CodeIgniter\Model->insert(Array)
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->guardarInvestigacion()
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#8 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-03-19 01:15:10 --> Operand should contain 1 column(s)
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `in...')
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `in...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `in...')
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseBuilder.php(2234): CodeIgniter\Database\BaseConnection->query('INSERT INTO `in...', Array, false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Model.php(729): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(186): CodeIgniter\Model->insert(Array)
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->guardarInvestigacion()
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#8 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-03-19 01:17:07 --> Class 'App\Controllers\SitioModel' not found
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->guardarSitio()
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-03-19 01:17:52 --> Undefined variable: sitioModel
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(334): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 334, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->guardarSitio()
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-03-19 01:18:27 --> Undefined variable: publicaciones
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(337): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 337, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->guardarSitio()
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-03-19 01:18:47 --> Undefined variable: publicacion
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Views\usuario\listaSitios.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/listasi...', Array, true)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(337): view('usuario/listasi...', Array)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->guardarSitio()
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-03-19 01:19:53 --> Undefined variable: publicacion
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Views\usuario\listaSitios.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/listasi...', Array, true)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(337): view('usuario/listasi...', Array)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->guardarSitio()
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-03-19 01:20:26 --> Undefined variable: publicacion
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Views\usuario\listaSitios.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/listasi...', Array, true)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(337): view('usuario/listasi...', Array)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->guardarSitio()
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

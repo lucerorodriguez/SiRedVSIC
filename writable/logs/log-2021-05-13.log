@@ -1,0 +1,321 @@
+CRITICAL - 2021-05-13 17:42:35 --> Column 'id_usuario' cannot be null
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `in...')
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `in...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `in...')
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseBuilder.php(2234): CodeIgniter\Database\BaseConnection->query('INSERT INTO `in...', Array, false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Model.php(729): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(186): CodeIgniter\Model->insert(Array)
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->guardarInvestigacion()
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#8 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-13 17:47:46 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Views\usuario\verInvestigacion.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/VerInve...', Array, true)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(206): view('usuario/VerInve...', Array)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->verInvestigacion('DataTables', 'datatables.min....')
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-13 17:47:46 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Views\usuario\verInvestigacion.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/VerInve...', Array, true)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(206): view('usuario/VerInve...', Array)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->verInvestigacion('DataTables', 'datatables.min....')
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-13 17:47:46 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Views\usuario\verInvestigacion.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/VerInve...', Array, true)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(206): view('usuario/VerInve...', Array)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->verInvestigacion('DataTables', 'datatables.min....')
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-13 17:47:46 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Views\usuario\verInvestigacion.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/VerInve...', Array, true)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(206): view('usuario/VerInve...', Array)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->verInvestigacion('DataTables', 'datatables.min....')
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-13 17:47:52 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Views\usuario\verInvestigacion.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/VerInve...', Array, true)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(206): view('usuario/VerInve...', Array)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->verInvestigacion('DataTables', 'datatables.min....')
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-13 17:47:52 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Views\usuario\verInvestigacion.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/VerInve...', Array, true)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(206): view('usuario/VerInve...', Array)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->verInvestigacion('DataTables', 'datatables.min....')
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-13 18:39:34 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Views\usuario\verInvestigacion.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/VerInve...', Array, true)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(206): view('usuario/VerInve...', Array)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->verInvestigacion('DataTables', 'datatables.min....')
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-13 18:39:34 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Views\usuario\verInvestigacion.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Common.php(1087): CodeIgniter\View\View->render('usuario/VerInve...', Array, true)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(206): view('usuario/VerInve...', Array)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->verInvestigacion('DataTables', 'datatables.min....')
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-13 20:52:55 --> syntax error, unexpected 'mkdir' (T_STRING)
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('Usuario/auth')
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(789): CodeIgniter\Router\Router->handle('Usuario/auth')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-13 20:54:11 --> A non-numeric value encountered
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(174): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\xampp\\htdocs...', 174, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->guardarInvestigacion()
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-13 20:56:44 --> Use of undefined constant base_url - assumed 'base_url' (this will throw an Error in a future version of PHP)
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(174): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 174, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->guardarInvestigacion()
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-13 21:59:34 --> syntax error, unexpected '}', expecting ';'
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('usuario/crearIn...')
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(789): CodeIgniter\Router\Router->handle('usuario/crearIn...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-13 21:59:41 --> syntax error, unexpected '}', expecting ';'
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('usuario/guardar...')
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(789): CodeIgniter\Router\Router->handle('usuario/guardar...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-13 22:00:01 --> syntax error, unexpected '}', expecting ';'
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('usuario/crearIn...')
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(789): CodeIgniter\Router\Router->handle('usuario/crearIn...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-13 22:00:06 --> syntax error, unexpected '}', expecting ';'
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('usuario/guardar...')
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(789): CodeIgniter\Router\Router->handle('usuario/guardar...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-13 22:00:13 --> syntax error, unexpected '}', expecting ';'
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('Usuario/listaIn...')
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(789): CodeIgniter\Router\Router->handle('Usuario/listaIn...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-13 22:00:19 --> syntax error, unexpected '}', expecting ';'
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('Usuario/listaIn...')
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(789): CodeIgniter\Router\Router->handle('Usuario/listaIn...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-13 22:03:02 --> syntax error, unexpected '}', expecting ';'
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('Usuario/listaIn...')
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(789): CodeIgniter\Router\Router->handle('Usuario/listaIn...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-13 22:03:05 --> syntax error, unexpected '}', expecting ';'
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('Usuario/listaIn...')
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(789): CodeIgniter\Router\Router->handle('Usuario/listaIn...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-13 22:03:11 --> syntax error, unexpected '}', expecting ';'
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('Usuario/listaIn...')
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(789): CodeIgniter\Router\Router->handle('Usuario/listaIn...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-13 22:04:48 --> Undefined property: App\Controllers\Usuario::$load
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(196): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 196, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->guardarInvestigacion()
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-13 22:06:38 --> Undefined property: App\Controllers\Usuario::$load
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(886): App\Controllers\Usuario->__construct()
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(395): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-13 22:06:46 --> Undefined property: App\Controllers\Usuario::$load
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(886): App\Controllers\Usuario->__construct()
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(395): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-13 22:15:26 --> Undefined property: App\Controllers\Usuario::$load
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(886): App\Controllers\Usuario->__construct()
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(395): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-13 22:15:28 --> Undefined property: App\Controllers\Usuario::$load
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(886): App\Controllers\Usuario->__construct()
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(395): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-13 22:15:32 --> Undefined property: App\Controllers\Usuario::$load
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(886): App\Controllers\Usuario->__construct()
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(395): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-13 22:27:03 --> Operand should contain 1 column(s)
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `in...')
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `in...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `in...')
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseBuilder.php(2234): CodeIgniter\Database\BaseConnection->query('INSERT INTO `in...', Array, false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Model.php(729): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(191): CodeIgniter\Model->insert(Array)
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->guardarInvestigacion()
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#8 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-13 22:28:02 --> Operand should contain 1 column(s)
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `in...')
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `in...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `in...')
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseBuilder.php(2234): CodeIgniter\Database\BaseConnection->query('INSERT INTO `in...', Array, false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Model.php(729): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(191): CodeIgniter\Model->insert(Array)
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->guardarInvestigacion()
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#8 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-13 22:28:59 --> Operand should contain 1 column(s)
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `in...')
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `in...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `in...')
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseBuilder.php(2234): CodeIgniter\Database\BaseConnection->query('INSERT INTO `in...', Array, false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Model.php(729): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(191): CodeIgniter\Model->insert(Array)
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->guardarInvestigacion()
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#8 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-13 22:36:14 --> Operand should contain 1 column(s)
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `in...')
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `in...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `in...')
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseBuilder.php(2234): CodeIgniter\Database\BaseConnection->query('INSERT INTO `in...', Array, false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Model.php(729): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(191): CodeIgniter\Model->insert(Array)
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->guardarInvestigacion()
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#8 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-13 22:36:30 --> Operand should contain 1 column(s)
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `in...')
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `in...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `in...')
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseBuilder.php(2234): CodeIgniter\Database\BaseConnection->query('INSERT INTO `in...', Array, false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Model.php(729): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(191): CodeIgniter\Model->insert(Array)
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->guardarInvestigacion()
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#8 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-13 22:37:28 --> Operand should contain 1 column(s)
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `in...')
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `in...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `in...')
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseBuilder.php(2234): CodeIgniter\Database\BaseConnection->query('INSERT INTO `in...', Array, false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Model.php(729): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(191): CodeIgniter\Model->insert(Array)
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->guardarInvestigacion()
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#8 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-13 22:37:39 --> Operand should contain 1 column(s)
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `in...')
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `in...')
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `in...')
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Database\BaseBuilder.php(2234): CodeIgniter\Database\BaseConnection->query('INSERT INTO `in...', Array, false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\Model.php(729): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(191): CodeIgniter\Model->insert(Array)
+#6 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->guardarInvestigacion()
+#7 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#8 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-13 22:38:23 --> Undefined property: App\Controllers\Usuario::$load
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\app\Controllers\Usuario.php(196): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 196, Array)
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->guardarInvestigacion()
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-13 22:47:34 --> Call to a member function store() on null
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->guardarInvestigacion()
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-13 22:47:54 --> Call to a member function store() on null
+#0 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(914): App\Controllers\Usuario->guardarInvestigacion()
+#1 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#2 C:\xampp\htdocs\cursoCodeIgniter-Udemy\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\cursoCodeIgniter-Udemy\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}

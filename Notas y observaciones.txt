@@ -1,0 +1,85 @@
+****///		crear carpeta de las investigaciones
+	pagina apoyo
+	http://www.forosdelweb.com/f180/como-crear-directorio-con-codeigniter-1051011/
+	pagina apoyo
+	https://www.baulphp.com/php-crear-una-carpeta-sino-existe/
+
+****///		agregar multiples archivos
+	documentacion
+	https://codeigniter4.github.io/CodeIgniter4/libraries/uploaded_files.html?highlight=upload
+	videos
+	https://www.youtube.com/watch?v=0XL3ckhtrvU
+
+****///		Forzar descarga de archivo
+	La clase Response proporciona una forma sencilla de enviar un archivo al cliente,
+	solicitando al navegador que descargue los datos a su computadora.
+	Esto establece los encabezados apropiados para que esto suceda.
+
+	https://codeigniter4.github.io/CodeIgniter4/outgoing/response.html?highlight=download#force-file-download
+
+****///		Eliminar archivos
+
+	https://codeigniter4.github.io/CodeIgniter4/helpers/filesystem_helper.html?highlight=delete_files#delete_files
+	tutorial in youtube
+	https://www.youtube.com/watch?v=0tB-I4KuJPs
+
+****///		usar fechas 
+	https://codeigniter4.github.io/userguide/libraries/time.html
+	use CodeIgniter\I18n\Time;
+
+ 	$fecha = new Time('now');
+
+****///		redireccionar a una pagina con javascript
+	// funciona como una redirección HTTP
+	window.location.replace("http://sitioweb.com");
+
+	// funciona como si dieras clic en un enlace
+	window.location.href = "http://sitioweb.com";
+
+****///		libreria para hcer alertas tipo modal con sweetalert
+
+	https://sweetalert2.github.io/#download
+
+****///		difentes tipos de hacer las querys
+
+	https://codeigniter.com/user_guide/database/query_builder.html#ordering-results
+
+****///		concatenar strings
+
+	https://www.srcodigofuente.es/aprender-php/formas-concatenar-unir-textos#:~:text=As%C3%AD%20como%20para%20sumar%20en,valores%20o%20variables%20a%20unir.
+
+****///		pasar varios arrelgos
+
+public function index()
+{
+  $this->load->model('categorias_mdl');
+  $categorias = $this->categorias_mdl->getCategorias();
+  /* Agregamos la clave categorias */
+  $datos['categorias'] = $categorias;
+  $this->load->model('productos_mdl');
+  $productos = $this->productos_mdl->getProductos();
+  /* Agregamos la clave productos*/
+  $datos['productos'] = $productos;
+  $this->load->view('header');
+  /* Pasamos los valores a la vista productos*/
+  $this->load->view('productos', $datos);
+  $this->load->view('footer');
+}
+En la Vista accederíamos de la siguiente forma.
+
+foreach ($productos as $value) { ...} 
+
+foreach ($categorias as $value) { ...} 
+
+https://es.stackoverflow.com/questions/86030/pasar-varios-parametros-a-una-vista-en-codeigniter-2
+
+otro metodos de querys
+
+https://codeigniter4.github.io/userguide/database/results.html#result-rows
+
+agregar css y js en codegniter
+
+ <script src="<?php echo base_url(); ?>/assets/js/usuario/updateInvestigacion.js"></script>
+
+	tutorial
+https://www.youtube.com/watch?v=tbYFN7k_XFg
