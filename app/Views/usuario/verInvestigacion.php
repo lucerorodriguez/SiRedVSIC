@@ -35,10 +35,8 @@
       <tr>
         <th >Nombre de los Archivos</th>
          <th >
-            <form action="<?php echo base_url(); ?>/index.php/usuario/gestionarArchivos" method="POST">
-                <input type="text" class="form-control" name="id_investigacion" hidden value="<?php echo $investigacion['id_investigacion'] ?>">
-                <button type="submit" class="btn btn-warning">Gestionar archivos</button>
-            </form></th>
+            <a class="btn btn-warning" href="<?php echo base_url(); ?>/index.php/Usuario/gestionarArchivos/<?php echo $investigacion['id_investigacion'] ?>" role="button">Gestionar archivos</a>
+        </th>
       </tr>
     </thead>
     <tbody>

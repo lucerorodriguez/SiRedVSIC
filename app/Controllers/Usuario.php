@@ -230,35 +230,6 @@ class Usuario extends BaseController
         $publicaciones = array('publicaciones' => $all_info);
         return view('estructura/header').view('usuario/listapublicaciones', $publicaciones).view('estructura/footer');
     }
-
-    public function guardarUpload(){
-        $id_usuario = $this->session->get('id_usuario');
-        $micarpeta = './uploads/'.$id_usuario."/";
-        if (!file_exists($micarpeta)) {
-            mkdir($micarpeta, 0777, true);
-        }
-        $file = $this->request->getFile('archivo');
-        if ($file->isValid())
-        {
-           $file->move($micarpeta);
-        }
-        $investigacionModel = new InvestigacionModel($db);
-        $request = \Config\Services::request();
-        $id_usuario = $this->session->get('id_usuario');
-        $data = array(
-            'nombre_proyecto'=>$request->getPostGet('nombre_proyecto'),
-            'objetivos'=>$request->getPostGet('objetivos'),
-            'descripcion'=>$request->getPostGet('descripcion'),
-            'programas'=>$request->getPostGet('programas'),
-            'requisitos'=>$request->getPostGet('requisitos'),
-            'id_usuario'=>$id_usuario
-        );
-        $investigacionModel->insert($data);
-        $all_info = $investigacionModel->where('id_usuario', $id_usuario)->findAll();
-        $investigaciones = array('investigaciones' => $all_info);
-        return view('estructura/header').view('usuario/listainvestigaciones', $investigaciones).view('estructura/footer');
-        }
-
         ////insertar en la base de datos la investigación
     public function guardarInvestigacion(){
         $id_usuario = $this->session->get('id_usuario');
@@ -380,10 +351,8 @@ class Usuario extends BaseController
 
     
 
-    public function gestionarArchivos()
+    public function gestionarArchivos($id)
     {
-        $request = \Config\Services::request();
-        $id = $request->getPostGet('id_investigacion');
         $data['id_investigacion'] = $id;
         $ArchivosModel = new ArchivosModel($db);
         $list_archivos = $ArchivosModel->where('id_investigacion', $id)->findAll();
@@ -395,7 +364,6 @@ class Usuario extends BaseController
     {
         $request = \Config\Services::request();
         $ruta = $request->getPostGet('ruta');
-        $ubicacion = './'.$ruta.'/14/125_1621190220_b43baf807be6f5ba1cb9.doc';
         return $this->response->download($ruta, null);
     }
     public function eliminarArchivo()
