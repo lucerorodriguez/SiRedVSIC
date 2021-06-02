@@ -96,7 +96,7 @@
                                         <td>
                                         <?php echo $tesis['nombre_documento'] ?>
                                         <form action="<?php echo base_url(); ?>/index.php/usuario/downloadArchivo" method="POST">
-                                                <input type="text" class="form-control" name="ruta" hidden value="./uploads/16/131_1621912114_e06a8328b453bf076f88.jpg">
+                                                <input type="text" class="form-control" name="ruta" hidden value="<?php echo $tesis['ruta_documento'] ?>">
                                                 <button type="submit" class="btn btn-primary">Descargar</button>
                                         </form>
                                 </td>

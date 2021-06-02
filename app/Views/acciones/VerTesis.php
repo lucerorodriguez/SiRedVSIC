@@ -3,7 +3,6 @@
     
     </br></br></br>
     <div class="container">
-        <form>
                 <table class="table table-hover table table-bordered">
                         <thead>
                                 <tr class="bg-primary">
@@ -89,12 +88,24 @@
                                                 </div>
                                         </td>
                                 </tr>
+
+                                <tr>
+                                <td scope="row">
+                                        <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">Archivo</label>
+                                </td>
+                                        <td>
+                                        <?php echo $tesis['nombre_documento'] ?>
+                                        <form action="<?php echo base_url(); ?>/index.php/usuario/downloadArchivo" method="POST">
+                                                <input type="text" class="form-control" name="ruta" hidden value="<?php echo $tesis['ruta_documento'] ?>">
+                                                <button type="submit" class="btn btn-primary">Descargar</button>
+                                        </form>
+                                </td>
+                        </tr>
+
                                
    
                          </tbody>
                 </table>    
-        </form>
-       
-       
     </div>
     </body>
