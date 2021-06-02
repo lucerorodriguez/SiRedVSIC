@@ -58,7 +58,7 @@
           <?php echo "<td>" . $publicacion['titulo'] . "</td>" ?>
           <?php echo "<td>" . $publicacion['autores'] . "</td>" ?>
           <?php echo "<td>" . $publicacion['tema'] . "</td>" ?>
-          <td><a class="btn btn-primary" href="http://localhost/cursoCodeIgniter-Udemy/index.php/publicaciones/ver/<?php echo $publicacion['id_publicacion'] ?>" role="button">Abrir</a></td>
+          <td><a class="btn btn-primary" href="<?php echo base_url(); ?>/index.php/publicaciones/ver/<?php echo $publicacion['id_publicacion'] ?>" role="button">Abrir</a></td>
         </tr>
       <?php endforeach; ?>
     </tbody>

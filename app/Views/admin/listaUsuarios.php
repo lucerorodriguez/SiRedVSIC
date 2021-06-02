@@ -37,7 +37,7 @@
 
                                                 <?php echo "<td>" . $usuario['nombre'] . "</td>" ?>
                                                 <?php echo "<td>" . $usuario['correo'] . "</td>" ?>
-                                                <td><a class="btn btn-primary" href="http://localhost/cursoCodeIgniter-Udemy/index.php/admin/perfilUsuario/<?php echo $usuario['id_usuario'] ?>" role="button">Abrir</a></td>
+                                                <td><a class="btn btn-primary" href="<?php echo base_url(); ?>/index.php/admin/perfilUsuario/<?php echo $usuario['id_usuario'] ?>" role="button">Abrir</a></td>
                                             </tr>
                                     <?php
                                         }
@@ -75,7 +75,7 @@
                                                 <?php echo "<td>" . $usuario['nombre'] . "</td>" ?>
                                                 <?php echo "<td>" . $usuario['correo'] . "</td>" ?>
                                                 <td class="text-danger">Pendiente</td>
-                                                <td><a class="btn btn-primary" href="http://localhost/cursoCodeIgniter-Udemy/index.php/admin/validarUsuario/<?php echo $usuario['id_usuario'] ?>" role="button">revisar</a></td>
+                                                <td><a class="btn btn-primary" href="<?php echo base_url(); ?>/index.php/admin/validarUsuario/<?php echo $usuario['id_usuario'] ?>" role="button">revisar</a></td>
                                             </tr>
                                     <?php
                                         }
@@ -121,7 +121,7 @@
 
                                                 <?php echo "<td>" . $usuario['nombre'] . "</td>" ?>
                                                 <?php echo "<td>" . $usuario['correo'] . "</td>" ?>
-                                                <td><a class="btn btn-primary" href="http://localhost/cursoCodeIgniter-Udemy/index.php/Usuario/verPublicacion/<?php echo $usuario['id_usuario'] ?>" role="button">Abrir</a></td>
+                                                <td><a class="btn btn-primary" href="<?php echo base_url(); ?>/index.php/Usuario/verPublicacion/<?php echo $usuario['id_usuario'] ?>" role="button">Abrir</a></td>
                                             </tr>
                                     <?php
                                             }

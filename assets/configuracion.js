@@ -1,5 +1,5 @@
 //configuracion para la base url del proyecto
-const _appBaseURL = 'http://localhost/cursoCodeIgniter-Udemy/index.php';
+const _appBaseURL = 'http://localhost/SiRedVSIC/index.php';
 //configuracion de las tablas
 const Lenguaje = {
     "sProcessing": "Procesando...",

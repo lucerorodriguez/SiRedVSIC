@@ -86,7 +86,7 @@ class Usuario extends BaseController
     public function cerrar()
     {
         $this->session->destroy();
-        return redirect()->to('/cursoCodeIgniter-Udemy/');
+        return redirect()->to('/SiRedVSIC/');
     }
     public function modificar()
     {

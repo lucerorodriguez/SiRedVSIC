@@ -23,7 +23,7 @@
           <?php echo "<td>" . $investigacion['nombre_proyecto'] . "</td>" ?>
           <?php echo "<td>" . $investigacion['objetivos'] . "</td>" ?>
           <?php echo "<td>" . $investigacion['descripcion'] . "</td>" ?>
-          <td><a class="btn btn-primary" href="http://localhost/cursoCodeIgniter-Udemy/index.php/Usuario/verInvestigacion/<?php echo $investigacion['id_investigacion'] ?>" role="button">Abrir</a></td>
+          <td><a class="btn btn-primary" href="<?php echo base_url(); ?>/index.php/Usuario/verInvestigacion/<?php echo $investigacion['id_investigacion'] ?>" role="button">Abrir</a></td>
         </tr>
       <?php endforeach; ?>
     </tbody>

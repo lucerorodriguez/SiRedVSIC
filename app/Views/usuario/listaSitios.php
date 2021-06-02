@@ -23,7 +23,7 @@
           <?php echo "<td>" . $sitio['nombre_sitio'] . "</td>" ?>
           <?php echo "<td>" . $sitio['descripcion'] . "</td>" ?>
           <?php echo "<td>" . $sitio['url'] . "</td>" ?>
-         <td><a class="btn btn-primary" href="http://localhost/cursoCodeIgniter-Udemy/index.php/Usuario/verSitio/<?php echo $sitio['id_sitio'] ?>" role="button">Abrir</a></td>
+         <td><a class="btn btn-primary" href="<?php echo base_url(); ?>/index.php/Usuario/verSitio/<?php echo $sitio['id_sitio'] ?>" role="button">Abrir</a></td>
         </tr>
       <?php endforeach; ?>
     </tbody>

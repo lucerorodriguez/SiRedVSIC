@@ -21,7 +21,7 @@ class App extends BaseConfig
 	| environments.
 	|
 	*/
-	public $baseURL = 'http://localhost/cursoCodeIgniter-Udemy/';
+	public $baseURL = 'http://localhost/SiRedVSIC/';
 
 	/*
 	|--------------------------------------------------------------------------

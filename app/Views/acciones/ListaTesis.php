@@ -39,7 +39,7 @@
           <?php echo "<td>" . $tes['tesista'] . "</td>" ?>
           <?php echo "<td>" . $tes['tema_tesis'] . "</td>" ?>
           <?php echo "<td>" . $tes['descripcion'] . "</td>" ?>
-          <td><a class="btn btn-primary" href="http://localhost/cursoCodeIgniter-Udemy/index.php/tesis/ver/<?php echo $tes['id_tesis'] ?>" role="button">Abrir</a></td>
+          <td><a class="btn btn-primary" href="http://localhost/SiRedVSIC/index.php/tesis/ver/<?php echo $tes['id_tesis'] ?>" role="button">Abrir</a></td>
         </tr>
       <?php endforeach; ?>
     </tbody>

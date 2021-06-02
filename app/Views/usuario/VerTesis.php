@@ -104,6 +104,35 @@
 
                         </tbody>
         </table>          
-       
+        <div class="card-body text-right">
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#eliminarModalTesis">
+                Eliminar
+            </button>
+            <a class="btn btn-info" href="<?php echo base_url(); ?>/index.php/Usuario/modificarTesis/<?php echo $tesis['id_tesis'] ?>" role="button">Modifciar datos</a>
+
+        </div>
+    </div>
+    </div>
+    <div class="modal fade" id="eliminarModalTesis" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Eliminar Tesis</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ¿Seguro que desea eliminar esta Tesis?
+                </div>
+                <div class="modal-footer">
+                     <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                    <form action="<?php echo base_url(); ?>/index.php/usuario/eliminarTesis" method="POST">
+                        <input type="text" class="form-control" name="id_in" hidden value="<?php echo $tesis['id_tesis'] ?>">
+                        <button type="submit" class="btn btn-success">Aceptar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
     </body>

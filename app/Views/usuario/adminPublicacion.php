@@ -41,8 +41,8 @@
                 <label for="staticEmail" class="col-sm-2 col-form-label">Enlace web</label>
                 <label for="staticEmail" class="col-sm-2 col-form-label"><a href="<?php echo $publicacion['url']?>"> <?php echo $publicacion['url'] ?></a></label>
         </div>
-        <td><a class="btn btn-primary" href="http://localhost/cursoCodeIgniter-Udemy/index.php/publicaciones/ver/<?php echo $publicacion['id_publicacion']?>" role="button">Modificar</a></td>
-        <td><a class="btn btn-danger" href="http://localhost/cursoCodeIgniter-Udemy/index.php/publicaciones/ver/<?php echo $publicacion['id_publicacion']?>" role="button">eliminar</a></td>
+        <td><a class="btn btn-primary" href="<?php echo base_url(); ?>/index.php/publicaciones/ver/<?php echo $publicacion['id_publicacion']?>" role="button">Modificar</a></td>
+        <td><a class="btn btn-danger" href="<?php echo base_url(); ?>/index.php/publicaciones/ver/<?php echo $publicacion['id_publicacion']?>" role="button">eliminar</a></td>
     </form>
 </div>
 </body>
