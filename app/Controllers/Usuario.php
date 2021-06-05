@@ -194,7 +194,18 @@ class Usuario extends BaseController
         $tesis = array('tesis' => $all_info);
         return view('estructura/header').view('usuario/listatesis', $tesis).view('estructura/footer');
         }
-
+        public function eliminarTesis()
+        {
+            $tesisModel = new TesisModel($db);
+            $request = \Config\Services::request();
+            $id = $request->getPostGet('id_t');
+            $ruta = $request->getPostGet('rep');
+            if (file_exists($ruta)) {
+                unlink($ruta);
+                $tesisModel->where('id_tesis', $id)->delete();
+            }
+            return json_encode("1");
+        }
     public function crearPublicacion(){
         return view('estructura/header').view('usuario/crearPublicacion').view('estructura/footer');
     }

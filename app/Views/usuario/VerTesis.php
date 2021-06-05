@@ -103,10 +103,16 @@
                         </tr>
 
                         </tbody>
-        </table>          
+        </table>
+        <input type="text" id="id_t" name="id_t" hidden value="<?php echo $tesis['id_tesis'] ?>">
+        <input type="text" id="rep" name="rep" hidden value="<?php echo $tesis['ruta_documento'] ?>">   
+
         <div class="card-body text-right">
             <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#eliminarModalTesis">
                 Eliminar
+            </button>
+            <button type="button" class="btn btn-danger" id="eliminar">
+                Eliminar por ajax
             </button>
             <a class="btn btn-info" href="<?php echo base_url(); ?>/index.php/Usuario/modificarTesis/<?php echo $tesis['id_tesis'] ?>" role="button">Modifciar datos</a>
 
@@ -135,4 +141,5 @@
             </div>
         </div>
     </div>
+    <script src="<?php echo base_url(); ?>/assets/js/tesis/eliminarTesis.js"></script>
     </body>
