@@ -35,12 +35,57 @@
                     </div>
                 </div>
                 <div class="col-md-3 mb-3">
-                    <label class="font-weight-bold">Grado de Investigación</label>
-                    <input type="text" class="form-control" name="grado_investigacion" required>
+                    <label class="font-weight-bold">LGAC</label>
+                    <input type="text" class="form-control" name="lgac" required>
                 </div>
                 <div class="col-md-3 mb-3">
                     <label class="font-weight-bold">Línea de Investigación</label>
                     <input type="text" class="form-control" name="linea_investigacion" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label class="font-weight-bold">Área de adscripción</label>
+                    <input type="text" class="form-control" name="area_adscripcion" required>
+                    <div class="invalid-feedback">
+                        Por favor ingresa el área de adscipción
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label class="font-weight-bold">Formación acádemica</label>
+                    <input type="text" class="form-control" name="formacion_academica" required>
+                    <div class="invalid-feedback">
+                        Por favor ingresa la formación académica
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label class="font-weight-bold">Área de conocimiento</label>
+                    <input type="text" class="form-control" name="area_conocimiento" required>
+                </div>
+               
+            </div>
+            <div class="form-row">
+            <br><br>
+                <div class="form-group col-md-6">
+                    <label for="validationCustom01" class="font-weight-bold">Miembro SNI-Nivel</label>
+                    <select name="sni_nivel" class="form-select" aria-label="Default select example">
+                        <option selected requiered>Selecciona el nivel</option>
+                        <option value="Candidato a investigador nacioanl">Candidato a Investigador Nacional</option>
+                        <option value="Investigador nacional nivel I">Investigador Nacional nivel I</option>
+                        <option value="Investigador nacional nivel I">Investigador Nacional Nivel II</option>
+                        <option value="Investigador nacional nivel III">Investigador Nacional Nivel III</option>
+                        <option value="Investigador nacional emérito">Investigador Nacional Emérito</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Por favor ingresa el nivel SNI
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label class="font-weight-bold">Perfil deseable</label>
+                    <input type="text" class="form-control" name="perfil_deseable" required>
+                    <div class="invalid-feedback">
+                        Por favor ingresa el perfil deseable
+                    </div>
                 </div>
             </div>
 
