@@ -30,7 +30,7 @@ class Usuario extends BaseController
         $request = \Config\Services::request();
         $data = array(
             'nombre' => $request->getPostGet('nombre'),
-            'grado_investigacion' => $request->getPostGet('grado_investigacion'),
+            'lgac' => $request->getPostGet('lgac'),
             'linea_investigacion' => $request->getPostGet('linea_investigacion'),
             'institucion' => $request->getPostGet('institucion'),
             'proyectos_vigentes' => $request->getPostGet('proyectos_vigentes'),
@@ -38,7 +38,13 @@ class Usuario extends BaseController
             'telefono' => $request->getPostGet('telefono'),
             'rol' => 2,
             'contrasena' => 'pendiente',
-            'estado' => 'pendiente'
+            'estado' => 'pendiente',
+            'foto_perfil' => '',
+            'area_adscripcion' => $request->getPostGet('area_adscripcion'),
+            'formacion_academica' => $request->getPostGet('formacion_academica'),
+            'area_conocimiento' => $request->getPostGet('area_conocimiento'),
+            'sni_nivel' => $request->getPostGet('sni_nivel'),
+            'perfil_deseable' => $request->getPostGet('perfil_deseable')
         );
         $usuariosModel->insert($data);
         return view('estructura/header') . view('estructura/inicio') . view('estructura/footer');
@@ -103,10 +109,15 @@ class Usuario extends BaseController
         $id_usuario = $this->session->get('id_usuario');
         $data = array(
             'nombre' => $request->getPostGet('nombre'),
-            'grado_investigacion' => $request->getPostGet('grado_investigacion'),
+            'lgac' => $request->getPostGet('lgac'),
             'linea_investigacion' => $request->getPostGet('linea_investigacion'),
             'proyectos_vigentes' => $request->getPostGet('proyectos_vigentes'),
             'telefono' => $request->getPostGet('telefono'),
+            'area_adscripcion' => $request->getPostGet('area_adscripcion'),
+            'formacion_academica' => $request->getPostGet('formacion_academica'),
+            'area_conocimiento' => $request->getPostGet('area_conocimiento'),
+            'sni_nivel' => $request->getPostGet('sni_nivel'),
+            'perfil_deseable' => $request->getPostGet('perfil_deseable')
         );
         
         $usuariosModel->update($id_usuario, $data);

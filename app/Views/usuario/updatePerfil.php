@@ -20,8 +20,8 @@
                             <input class="form-control" type="text" name = "nombre" value="<?php echo " " . $user['nombre'] . "" ?>">
                         </li>
                         <li class="list-group-item">
-                            <label  class="font-weight-bold">Grado de Investigación</label>
-                            <input class="form-control" type="text" name = "grado_investigacion" value="<?php echo " " . $user['grado_investigacion'] . "" ?>">
+                            <label  class="font-weight-bold">LGAC</label>
+                            <input class="form-control" type="text" name = "lgac" value="<?php echo " " . $user['lgac'] . "" ?>">
                         </li>
                         <li class="list-group-item">
                             <label  class="font-weight-bold">Línea de Investigación</label>
@@ -34,6 +34,28 @@
                         <li class="list-group-item">
                             <label  class="font-weight-bold">Teléfono</label>
                             <input class="form-control" type="text" name = "telefono" value="<?php echo " " . $user['telefono'] . "" ?>">
+                        </li>
+                        <li class="list-group-item">
+                            <label  class="font-weight-bold">Área de adscipción</label>
+                            <input class="form-control" type="text" name = "area_adscripcion" value="<?php echo " " . $user['area_adscripcion'] . "" ?>">
+                        </li>
+                        <li class="list-group-item">
+                            <label  class="font-weight-bold">Formación Académica</label>
+                            <input class="form-control" type="text" name = "formacion_academica" value="<?php echo " " . $user['formacion_academica'] . "" ?>">
+                        </li>
+                        <li class="list-group-item">
+                            <label  class="font-weight-bold">Área de conocimiento</label>
+                            <input class="form-control" type="text" name = "area_conocimiento" value="<?php echo " " . $user['area_conocimiento'] . "" ?>">
+                        </li>
+                        <li class="list-group-item">
+                            <label  class="font-weight-bold">Miembro SNI Nivel</label>
+                            <input class="form-control" type="text" name = "sni_nivel" value="<?php echo " " . $user['sni_nivel'] . "" ?>">
+                        </li>
+
+
+                        <li class="list-group-item">
+                            <label  class="font-weight-bold">Perfil Deseable</label>
+                            <input class="form-control" type="text" name = "perfil_deseable" value="<?php echo " " . $user['perfil_deseable'] . "" ?>">
                         </li>
 
                     </ul>

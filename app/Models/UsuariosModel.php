@@ -12,7 +12,7 @@ class UsuariosModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['nombre', 'grado_investigacion', 'linea_investigacion', 'institucion', 'proyectos_vigentes', 'correo', 'telefono', 'rol', 'contrasena', 'estado'];
+    protected $allowedFields = ['nombre', 'lgac', 'linea_investigacion', 'institucion', 'proyectos_vigentes', 'correo', 'telefono', 'rol', 'contrasena', 'estado', 'foto_perfil', 'area_adscripcion', 'formacion_academica', 'area_conocimiento', 'sni_nivel', 'perfil_deseable'];
 
     protected $useTimestamps = false;
     /*

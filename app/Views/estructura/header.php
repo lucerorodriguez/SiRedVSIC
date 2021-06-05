@@ -87,7 +87,7 @@
           <a class="dropdown-item" href="<?php echo base_url(); ?>/index.php/Usuario/verPerfil">Perfil</a>
           <a class="dropdown-item" href="<?php echo base_url(); ?>/index.php/Usuario/listaInvestigaciones">Mis investigaciones</a>
           <a class="dropdown-item" href="<?php echo base_url(); ?>/index.php/Usuario/listaPublicaciones">Mis publicaciones</a>
-          <a class="dropdown-item" href="<?php echo base_url(); ?>/index.php/Usuario/listaTesis">Tesis</a>
+          <a class="dropdown-item" href="<?php echo base_url(); ?>/index.php/Usuario/listaTesis">Mis Tesis</a>
           <a class="dropdown-item" href="<?php echo base_url(); ?>/index.php/Usuario/listaSitios">Mis sitios</a>
           <a class="dropdown-item" data-toggle="modal" data-target="#logout">Cerrar sesión</a>
         </div>

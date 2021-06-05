@@ -32,8 +32,8 @@
                         <input class="form-control" type="text" value="<?php echo " " . $user['correo'] . "" ?>" readonly>
                     </li>
                     <li class="list-group-item">
-                        <label class="font-weight-bold">Grado de Investigación</label>
-                        <input class="form-control" type="text" value="<?php echo " " . $user['grado_investigacion'] . "" ?>" readonly>
+                        <label class="font-weight-bold">LGAC</label>
+                        <input class="form-control" type="text" value="<?php echo " " . $user['lgac'] . "" ?>" readonly>
                     </li>
                     <li class="list-group-item">
                         <label class="font-weight-bold">Linea de Investigación</label>
@@ -46,6 +46,26 @@
                     <li class="list-group-item">
                         <label class="font-weight-bold">Teléfono</label>
                         <input class="form-control" type="text" value="<?php echo " " . $user['telefono'] . "" ?>" readonly>
+                    </li>
+                    <li class="list-group-item">
+                        <label class="font-weight-bold">Área de adscripción</label>
+                        <input class="form-control" type="text" value="<?php echo " " . $user['area_adscripcion'] . "" ?>" readonly>
+                    </li>
+                    <li class="list-group-item">
+                        <label class="font-weight-bold">Formación académica</label>
+                        <input class="form-control" type="text" value="<?php echo " " . $user['formacion_academica'] . "" ?>" readonly>
+                    </li>
+                    <li class="list-group-item">
+                        <label class="font-weight-bold">Área de concimiento</label>
+                        <input class="form-control" type="text" value="<?php echo " " . $user['area_conocimiento'] . "" ?>" readonly>
+                    </li>
+                    <li class="list-group-item">
+                        <label class="font-weight-bold">Miembro SNI-Nivel</label>
+                        <input class="form-control" type="text" value="<?php echo " " . $user['sni_nivel'] . "" ?>" readonly>
+                    </li>
+                    <li class="list-group-item">
+                        <label class="font-weight-bold">Perfil deseable</label>
+                        <input class="form-control" type="text" value="<?php echo " " . $user['perfil_deseable'] . "" ?>" readonly>
                     </li>
                     
                 </ul>
