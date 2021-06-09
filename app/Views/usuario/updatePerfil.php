@@ -49,7 +49,9 @@
                         </li>
                         <li class="list-group-item">
                             <label  class="font-weight-bold">Miembro SNI Nivel</label>
-                            <input class="form-control" type="text" name = "sni_nivel" value="<?php echo " " . $user['sni_nivel'] . "" ?>">
+                            <select name="sni_nivel" id="sni_nivel" class="custom-select" aria-label="Default select example">
+                                
+                            </select>
                         </li>
 
 
@@ -69,4 +71,21 @@
     </div>
 <?php endforeach; ?>
 </div>
+<script>
+$(document).ready(function () {
+            var nivel = document.getElementById("sni_nivel");
+            var lista = ["Candidato a investigador nacioanl","Investigador nacional nivel I","Investigador nacional nivel II","Investigador nacional nivel III","Investigador nacional emérito"];
+            
+            var valor = "<?php echo "".$user['sni_nivel'].""?>";
+            $("#sni_nivel").prepend('<option value='+valor+'>'+valor+'</option>');
+            $.each(lista, function (index, ele) {
+                if(valor != ele){
+                    option = document.createElement("option");
+                    option.value = ele;
+                    option.text = ele;
+                    nivel.appendChild(option);
+                }
+            });
+})
+</script>
 </div>

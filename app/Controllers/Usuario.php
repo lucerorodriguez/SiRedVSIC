@@ -11,6 +11,7 @@ use App\Models\TesisModel;
 use CodeIgniter\I18n\Time;
 
 use App\Models\ArchivosModel;
+use App\Models\AutoresModel;
 
 
 class Usuario extends BaseController
@@ -205,18 +206,80 @@ class Usuario extends BaseController
         $tesis = array('tesis' => $all_info);
         return view('estructura/header').view('usuario/listatesis', $tesis).view('estructura/footer');
         }
-        public function eliminarTesis()
-        {
-            $tesisModel = new TesisModel($db);
-            $request = \Config\Services::request();
-            $id = $request->getPostGet('id_t');
-            $ruta = $request->getPostGet('rep');
-            if (file_exists($ruta)) {
-                unlink($ruta);
-                $tesisModel->where('id_tesis', $id)->delete();
-            }
-            return json_encode("1");
+    public function eliminarTesis()
+    {
+        $tesisModel = new TesisModel($db);
+        $request = \Config\Services::request();
+        $id = $request->getPostGet('id_tes');
+        $ruta = $request->getPostGet('r_archivo');
+        if (file_exists($ruta)) {
+            unlink($ruta);
+            $tesisModel->where('id_tesis', $id)->delete();
         }
+        $id_usuario = $this->session->get('id_usuario');
+        $all_info = $tesisModel->where('id_usuario', $id_usuario)->findAll();
+        $tesis = array('tesis' => $all_info);
+        return view('estructura/header').view('usuario/listatesis', $tesis).view('estructura/footer');
+    }
+
+    public function modificarTesis($id)
+    {
+        $tesisModel = new TesisModel($db);
+        $all_info = $tesisModel->find($id);
+        $tesis = array('tesis' => $all_info);
+		return view('estructura/header').view('usuario/updateTesis', $tesis).view('estructura/footer');
+    }
+
+    public function updateTesis()
+    {
+        $TesisModel = new TesisModel($db);
+
+        $request = \Config\Services::request();
+
+        $id_usuario = $this->session->get('id_usuario');
+        $repositorio = './uploads/tesis_'.$id_usuario."/";
+        if (!file_exists($repositorio)) {
+            mkdir($repositorio, 0777, true);
+        }
+        $ruta = '';
+        $name = '';
+        $file = $this->request->getFile('archivo');
+        if ($file->isValid() && ! $file->hasMoved())
+        {
+            $name = $file->getName();
+            $newName = $file->getRandomName();
+            $nombre = strval($id_usuario).'_'.$newName;
+            $file->move($repositorio, $nombre);
+            $ruta = $repositorio.$nombre;
+            $ruta_documentoViejo = $request->getPostGet('ruta_documento_actual');
+            if (file_exists($ruta_documentoViejo)) {
+                unlink($ruta_documentoViejo);
+            }
+        }
+        $Nueva_Ruta = $request->getPostGet('ruta_documento_actual');
+        $Nueva_Nombre = $request->getPostGet('nombre_documento_actual');
+        if($ruta != ''){
+            $Nueva_Ruta = $ruta;
+            $Nueva_Nombre = $name;
+        };
+        $data = array(
+            'asesor'=>$request->getPostGet('asesor'),
+            'tesista'=>$request->getPostGet('tesista'),
+            'tema_tesis'=>$request->getPostGet('tema_tesis'),
+            'area_conocimiento'=>$request->getPostGet('area_conocimiento'),
+            'descripcion'=>$request->getPostGet('descripcion'),
+            'comentarios'=>$request->getPostGet('comentarios'),
+            'ruta_documento'=> $Nueva_Ruta,
+            'nombre_documento'=> $Nueva_Nombre
+        );
+        $id_tesis = $request->getPostGet('id_tesis');
+        $TesisModel->update( $id_tesis, $data);
+
+        $all_info = $TesisModel->where('id_usuario', $id_usuario)->findAll();
+        $tesis = array('tesis' => $all_info);
+        return view('estructura/header').view('usuario/listatesis', $tesis).view('estructura/footer');
+    }
+
     public function crearPublicacion(){
         return view('estructura/header').view('usuario/crearPublicacion').view('estructura/footer');
     }

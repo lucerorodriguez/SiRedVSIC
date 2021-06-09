@@ -68,7 +68,7 @@
             <br><br>
                 <div class="form-group col-md-6">
                     <label for="validationCustom01" class="font-weight-bold">Miembro SNI-Nivel</label>
-                    <select name="sni_nivel" class="form-select" aria-label="Default select example">
+                    <select name="sni_nivel" class="custom-select" aria-label="Default select example">
                         <option selected requiered>Selecciona el nivel</option>
                         <option value="Candidato a investigador nacioanl">Candidato a Investigador Nacional</option>
                         <option value="Investigador nacional nivel I">Investigador Nacional nivel I</option>

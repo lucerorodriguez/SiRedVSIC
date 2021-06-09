@@ -46,7 +46,7 @@
             </div>
 
             <div class="mb-3">
-                <label for="formFileMultiple" class="form-label font-weight-bold">Seleccione los archivos que desea subir a la plataforma</label>
+                <label for="formFileMultiple" class="form-label font-weight-bold">Seleccione el archivo que desea subir a la plataforma</label>
                 <input type="file" name="archivo"/>
             </div>
             

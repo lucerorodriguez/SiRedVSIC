@@ -58,4 +58,5 @@
         </div>
     </form>
 </div>
+<script src="<?php echo base_url(); ?>/assets/js/usuario/crearPublicacion.js"></script>
 </br>
