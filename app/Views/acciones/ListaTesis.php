@@ -1,21 +1,4 @@
-<html>
-
-<head>
-<title>Tesis</title>
-
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
-
-
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
-<!-- <link rel="stylesheet" href="../public/assets/css/style.css"> -->
-
-</head>
-
 <body>
-
-
 </br></br></br>
 <div class="container">
   <br> <br>
@@ -44,9 +27,7 @@
       <?php endforeach; ?>
     </tbody>
   </table>
-  
 </div>
-
 <script>
 
     $(document).ready( function () {
@@ -55,7 +36,4 @@
         });
     } );
 </script>
-
 </body>
-
-</html>

@@ -14,31 +14,41 @@
         <ul class="list-group list-group-flush">
             <li class="list-group-item">
                 <label class="font-weight-bold">Autores</label>
-                <input class="form-control" type="text" value="<?php echo " " . $publicacion['autores'] . "" ?>" readonly>
+                <?php
+                $nombres = "";
+                if($publicacion['autores'] != ""){
+                    $array_nombres = explode(",", $publicacion['autores']);
+                    $nombres = $array_nombres[0];
+                    for ($i = 1; $i < count($array_nombres); $i++) {
+                        $nombres = $nombres.", ".$array_nombres[$i];
+                    }
+                }
+                ?>
+                <input class="form-control" type="text" value="<?php echo "" .$nombres . "" ?>" readonly>
             </li>
             <li class="list-group-item">
                 <label class="font-weight-bold">Tema</label>
-                <input class="form-control" type="text" value="<?php echo " " . $publicacion['tema'] . "" ?>" readonly>
+                <input class="form-control" type="text" value="<?php echo "" . $publicacion['tema'] . "" ?>" readonly>
             </li>
             <li class="list-group-item">
                 <label class="font-weight-bold">Albitraje</label>
-                <input class="form-control" type="text" value="<?php echo " " . $publicacion['albitraje'] . "" ?>" readonly>
+                <input class="form-control" type="text" value="<?php echo "" . $publicacion['albitraje'] . "" ?>" readonly>
             </li>
             <li class="list-group-item">
                 <label class="font-weight-bold">Indexación</label>
-                <input class="form-control" type="text" value="<?php echo " " . $publicacion['indexacion'] . "" ?>" readonly>
+                <input class="form-control" type="text" value="<?php echo "" . $publicacion['indexacion'] . "" ?>" readonly>
             </li>
             <li class="list-group-item">
                 <label class="font-weight-bold">Descripción</label>
-                <input class="form-control" type="text" value="<?php echo " " . $publicacion['descripcion'] . "" ?>" readonly>
+                <input class="form-control" type="text" value="<?php echo "" . $publicacion['descripcion'] . "" ?>" readonly>
             </li>
             <li class="list-group-item">
                 <label class="font-weight-bold">Fecha</label>
-                <input class="form-control" type="text" value="<?php echo "" . $publicacion['dia'] . "/" . $publicacion['mes'] . "/" . $publicacion['anio'] . "" ?>" readonly>
+                <input class="form-control" type="text" value="<?php echo "" . $publicacion['fecha'] . "" ?>" readonly>
             </li>
             <li class="list-group-item">
                 <label class="font-weight-bold">URL</label>
-                <input class="form-control" type="text" value="<?php echo " " . $publicacion['url'] . "" ?>" readonly>
+                <input class="form-control" type="text" value="<?php echo "" . $publicacion['url'] . "" ?>" readonly>
             </li>
 
         </ul>

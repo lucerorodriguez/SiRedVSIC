@@ -10,7 +10,7 @@ class PublicacionModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['dia', 'mes','anio', 'autores', 'titulo', 'tema', 'albitraje', 'indexacion', 'descripcion', 'url','id_usuario'];
+    protected $allowedFields = ['autores', 'titulo', 'tema', 'albitraje', 'indexacion', 'descripcion', 'url','id_usuario','fecha'];
 
     protected $useTimestamps = false;
    /*

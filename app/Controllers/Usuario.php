@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Controllers;
 
 use App\Models\UsuariosModel;
@@ -136,6 +135,40 @@ class Usuario extends BaseController
         $data_user = array('data_user' => $usuario);
         return view('estructura/header') . view('usuario/perfil', $data_user) . view('estructura/footer');
     }
+    public function AgregarFoto(){
+        $usuariosModel = new usuariosModel($db);
+        $request = \Config\Services::request();
+        $id_usuario = $this->session->get('id_usuario');
+        $repositorio = './uploads/users_photos/';
+        if (!file_exists($repositorio)) {
+            mkdir($repositorio, 0777, true);
+        }
+        $ruta = '';
+        $file = $this->request->getFile('archivo');
+        if ($file->isValid() && ! $file->hasMoved()  && $file != "")
+        {
+            $newName = $file->getRandomName();
+            $nombre = strval($id_usuario).'_'.$newName;
+            $file->move($repositorio, $nombre);
+            $ruta = '/uploads/users_photos/'.$nombre;
+            $data = array(
+                'foto_perfil'=> $ruta
+            );
+            $usuariosModel->update( $id_usuario, $data);
+
+            $ruta_vieja = ".".$request->getPostGet('archivo_viejo');
+            if (file_exists($ruta_vieja) && $ruta_vieja !="./uploads/users_photos/user_default.jpg") {
+                unlink($ruta_vieja);
+            }
+        }
+       
+
+        $correo = $this->session->get('email');
+        $usuario = $usuariosModel->where('correo', $correo)->findAll();
+        $data_user = array('data_user' => $usuario);
+        return view('estructura/header') . view('usuario/perfil', $data_user) . view('estructura/footer');
+        }
+    
     public function listaPublicaciones()
     {
         $publicacionModel = new PublicacionModel($db);
@@ -280,6 +313,25 @@ class Usuario extends BaseController
         return view('estructura/header').view('usuario/listatesis', $tesis).view('estructura/footer');
     }
 
+    public function getAutores()
+	{
+        $autoresModel = new AutoresModel($db);
+        $all_Autores = $autoresModel->findAll();
+        $autores = array('autores' => $all_Autores);
+		return $this->response->setJSON($autores);
+    }
+
+    public function autorPorNombre()
+	{
+        $request = \Config\Services::request();
+        $nombre = $request->getPostGet('nombre');
+
+        $autoresModel = new AutoresModel($db);
+        $datos_autor = $autoresModel->where('nombre', $nombre)->findAll();
+        $autor = array('autor' => $datos_autor);
+		return $this->response->setJSON($datos_autor);
+    }
+    
     public function crearPublicacion(){
         return view('estructura/header').view('usuario/crearPublicacion').view('estructura/footer');
     }
@@ -296,19 +348,30 @@ class Usuario extends BaseController
         $publicacionModel = new PublicacionModel($db);
 
         $request = \Config\Services::request();
+        $cadena_nombres = $request->getPostGet('autores');
+        $array_nombres = explode(",", $cadena_nombres);
+        $autoresModel = new AutoresModel($db);
+        for ($i = 0; $i < count($array_nombres); $i++) {
+            $datos_autor = $autoresModel->where('nombre', $array_nombres[$i])->findAll();
+            if($datos_autor == null){
+                $data = array(
+                    'nombre'=>$array_nombres[$i]
+                );
+                $autoresModel->insert($data);
+            }
+        }
+
         $id_usuario = $this->session->get('id_usuario');
         $data = array(
-            'dia'=>$request->getPostGet('dia'),
-            'mes'=>$request->getPostGet('mes'),
-            'anio'=>$request->getPostGet('anio'),
-            'autores'=>$request->getPostGet('autores'),
+            'autores'=>$cadena_nombres,
             'titulo'=>$request->getPostGet('titulo'),
             'tema'=>$request->getPostGet('tema'),
             'albitraje'=>$request->getPostGet('albitraje'),
             'indexacion'=>$request->getPostGet('indexacion'),
             'descripcion'=>$request->getPostGet('descripcion'),
             'url'=>$request->getPostGet('url'),
-            'id_usuario'=>$id_usuario
+            'id_usuario'=>$id_usuario,
+            'fecha'=>$request->getPostGet('fecha')
         );
         $publicacionModel->insert($data);
         $all_info = $publicacionModel->where('id_usuario', $id_usuario)->findAll();
@@ -490,17 +553,29 @@ class Usuario extends BaseController
         $publicacionModel = new PublicacionModel($db);
 
         $request = \Config\Services::request();
+
+        $cadena_nombres = $request->getPostGet('autores');
+        $array_nombres = explode(",", $cadena_nombres);
+        $autoresModel = new AutoresModel($db);
+        for ($i = 0; $i < count($array_nombres); $i++) {
+            $datos_autor = $autoresModel->where('nombre', $array_nombres[$i])->findAll();
+            if($datos_autor == null){
+                $data = array(
+                    'nombre'=>$array_nombres[$i]
+                );
+                $autoresModel->insert($data);
+            }
+        }
+
         $data = array(
-            'dia'=>$request->getPostGet('dia'),
-            'mes'=>$request->getPostGet('mes'), 
-            'anio'=>$request->getPostGet('anio'),
-            'autores'=>$request->getPostGet('autores'),
+            'autores'=>$cadena_nombres,
             'titulo'=>$request->getPostGet('titulo'),
             'tema'=>$request->getPostGet('tema'),
             'albitraje'=>$request->getPostGet('albitraje'),
             'indexacion'=>$request->getPostGet('indexacion'),
             'descripcion'=>$request->getPostGet('descripcion'),
-            'url'=>$request->getPostGet('url')
+            'url'=>$request->getPostGet('url'),
+            'fecha'=>$request->getPostGet('fecha')
            
         );
         $id_publicacion = $request->getPostGet('id_publicacion');

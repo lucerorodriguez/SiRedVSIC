@@ -4,19 +4,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- jquery nuevos -->
+  <script type="text/javascript" src="<?php echo base_url(); ?>/assets/js/librerias/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/js/librerias/jquery-ui.css">
+    <script type="text/javascript" src="<?php echo base_url(); ?>/assets/js/librerias/jquery-ui.js"></script>
+
 
   <!-- Bootstrap 4 CSS y js -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
   <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
-  
-   <!-- <link rel="stylesheet" href="../public/assets/css/style.css"> -->
 
-   <!--<script type="text/javascript" src="<?php echo base_url(); ?>/assets/js/jquery-3.6.0.min.js"></script>-->
+ <!-- Bootstrap 4 iconos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  
 <!-- sweetalert2 -->
    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <!-- configuracion de variables globales js -->
@@ -115,70 +118,6 @@
     ?>
   </div>
 </nav>
-
-
-
-<!--
-  <div class="navbar navbar-dark bg-dark" id="menu">
-    <a href="../index.php/inicio"><img src="<?php echo base_url(); ?>/public/logo.png" width="150" height="20" id="inicio"></a>
-    <a href="<?php echo base_url(); ?>/index.php/Investigaciones">Investigación</a>
-    <a href="<?php echo base_url(); ?>/index.php/Publicaciones">Publicaciones</a>
-    <a href="#">Formación</a>
-    <a href="#">Sitios de interés</a>
-    <a href="../Integrantes_controller/index1">Integrantes</a>
-    <a href="../Novedades_controller/index1">Novedades</a>
-    <?php
-    $session = \Config\Services::session();
-    if ($session->get('nombre') === null) {
-    ?>
-      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#sesionModal" data-whatever="@mdo">Inicia sesion en la red &raquo;</button>
-    <?php
-    }
-    if ($session->get('rol') == '2') {
-      $cadena = $session->get('nombre');
-      $array = explode(" ", $cadena);
-      echo "Hola " . $array[0] . "</br>";
-    ?>
-      <div class="btn-group" role="group">
-        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Menú de Usuario
-        </button>
-        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-          <a class="dropdown-item" href="<?php echo base_url(); ?>/index.php/Usuario/verPerfil">Perfil</a>
-          <a class="dropdown-item" href="<?php echo base_url(); ?>/index.php/Usuario/listaPublicaciones">Mis publicaciones</a>
-          <a class="dropdown-item" href="<?php echo base_url(); ?>/index.php/Usuario/listaInvestigaciones">Mis investigaciones</a>
-          <a class="dropdown-item" data-toggle="modal" data-target="#logout">Cerrar sesión</a>
-        </div>
-      </div>
-    <?php
-    }
-    if ($session->get('rol') == '1') {
-      $cadena = $session->get('nombre');
-      $array = explode(" ", $cadena);
-      echo "hola " . $array[0] . "</br>";
-    ?>
-     <div class="btn-group" role="group">
-        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Menu Admin
-        </button>
-        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-          <a class="dropdown-item" href="<?php echo base_url(); ?>/index.php/admin/perfil">Perfil</a>
-          <a class="dropdown-item" href="<?php echo base_url(); ?>/index.php/admin/listaUsuarios">adm usuarios</a>
-          <a class="dropdown-item" href="#">Publicaciones</a>
-          <a class="dropdown-item" data-toggle="modal" data-target="#logout">Cerrar sesión</a>
-        </div>
-      </div>
-    <?php
-    }
-    ?>
-  </div>
-
--->
-
-
-
-
-
   <!-- Esta parte es del modal-->
   <div class="modal fade" id="sesionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">

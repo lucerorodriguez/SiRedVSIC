@@ -14,19 +14,19 @@
         <ul class="list-group list-group-flush">
             <li class="list-group-item">
                 <label class="font-weight-bold">Objetivos de la Publicación</label>
-                <input class="form-control" type="text" value="<?php echo " " . $investigacion['objetivos'] . "" ?>" readonly>
+                <input class="form-control" type="text" value="<?php echo "" . $investigacion['objetivos'] . "" ?>" readonly>
             </li>
             <li class="list-group-item">
                 <label class="font-weight-bold">Descripción de la Investigación</label>
-                <input class="form-control" type="text" value="<?php echo " " . $investigacion['descripcion'] . "" ?>" readonly>
+                <input class="form-control" type="text" value="<?php echo "" . $investigacion['descripcion'] . "" ?>" readonly>
             </li>
             <li class="list-group-item">
                 <label class="font-weight-bold">Programas que incluye la Investigación</label>
-                <input class="form-control" type="text" value="<?php echo " " . $investigacion['programas'] . "" ?>" readonly>
+                <input class="form-control" type="text" value="<?php echo "" . $investigacion['programas'] . "" ?>" readonly>
             </li>
             <li class="list-group-item">
                 <label class="font-weight-bold">Requisitos</label>
-                <input class="form-control" type="text" value="<?php echo " " . $investigacion['requisitos'] . "" ?>" readonly>
+                <input class="form-control" type="text" value="<?php echo "" . $investigacion['requisitos'] . "" ?>" readonly>
             </li>
             
         </ul>

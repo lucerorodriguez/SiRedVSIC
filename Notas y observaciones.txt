@@ -29,6 +29,14 @@
 
  	$fecha = new Time('now');
 
+****///		insertar valor de fecha desde base de datos en html en un input date
+
+	codigo:
+	<input type="date" value="<?php echo date('Y-m-d', strtotime($valor['fecha'])) ?>">
+
+	link:
+	https://es.stackoverflow.com/questions/113586/ponerle-un-value-por-defecto-a-un-input-type-date
+
 ****///		redireccionar a una pagina con javascript
 	// funciona como una redirección HTTP
 	window.location.replace("http://sitioweb.com");
@@ -36,9 +44,32 @@
 	// funciona como si dieras clic en un enlace
 	window.location.href = "http://sitioweb.com";
 
+****///		Agregary eliminar elementos li a una lista ul con javascript
+
+	https://www.lawebdelprogramador.com/codigo/JavaScript/2680-Agregar-y-eliminar-elementos-li-de-una-lista-ul-con-javascript.html
+	
+	mas opciones
+	https://lenguajejs.com/javascript/dom/insertar-elementos-dom/
+
+****///		Eliminar bietas o estilo de lista de un ul
+
+	codigo:
+	<ul style="list-style: none;">
+  		<li>Coffee</li>
+  		<li>Tea</li>
+  		<li>Milk</li>
+	</ul>  
+
+	https://aprenderaprogramar.com/foros/index.php?topic=4285.0
+
 ****///		libreria para hcer alertas tipo modal con sweetalert
 
 	https://sweetalert2.github.io/#download
+
+****///		separar cadena en un array php
+
+	https://www.php.net/manual/es/function.explode.php
+
 
 ****///		difentes tipos de hacer las querys
 
@@ -83,3 +114,17 @@ agregar css y js en codegniter
 
 	tutorial
 https://www.youtube.com/watch?v=tbYFN7k_XFg
+
+****///		array en inputs
+		explicacion fasil 
+	https://stackoverflow.com/questions/6547209/passing-an-array-using-an-html-form-hidden-element
+
+	otro
+	https://stackoverflow.com/questions/5656392/how-to-create-input-type-text-dynamically/43439713#:~:text=createElement%20and%20setAttribute%20.-,var%20input%20%3D%20document.,to%20the%20desired%20parent%20element.
+	otro
+	https://www.eduardocollado.com/2016/11/17/formularios-html-con-campos-dinamicos-en-javascript/
+
+****///		documentacion
+	https://codeigniter4.github.io/CodeIgniter4/libraries/uploaded_files.html?highlight=upload
+	videos
+	https://www.youtube.com/watch?v=0XL3ckhtrvU

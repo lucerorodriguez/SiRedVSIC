@@ -14,15 +14,15 @@
         <ul class="list-group list-group-flush">
             <li class="list-group-item">
                 <label class="font-weight-bold">Autores</label>
-                <input class="form-control" type="text" value="<?php echo " " . $sitio['categoria'] . "" ?>" readonly>
+                <input class="form-control" type="text" value="<?php echo "" . $sitio['categoria'] . "" ?>" readonly>
             </li>
             <li class="list-group-item">
                 <label class="font-weight-bold">Tema</label>
-                <input class="form-control" type="text" value="<?php echo " " . $sitio['descripcion'] . "" ?>" readonly>
+                <input class="form-control" type="text" value="<?php echo "" . $sitio['descripcion'] . "" ?>" readonly>
             </li>
             <li class="list-group-item">
                 <label class="font-weight-bold">Albitraje</label>
-                <input class="form-control" type="text" value="<?php echo " " . $sitio['url'] . "" ?>" readonly>
+                <input class="form-control" type="text" value="<?php echo "" . $sitio['url'] . "" ?>" readonly>
             </li>
 
         </ul>

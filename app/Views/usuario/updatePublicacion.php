@@ -16,10 +16,26 @@
                                 <label class="font-weight-bold">Titulo</label>
                                 <input class="form-control" type="text" name="titulo" value="<?php echo "" . $publicacion['titulo'] . "" ?>">
                         </li>
-                        <li class="list-group-item">
-                                <label class="font-weight-bold">Autores</label>
-                                <input class="form-control" type="text" name="autores" value="<?php echo "" . $publicacion['autores'] . "" ?>">
-                        </li>
+                                <input class="form-control" type="text" name="autores_publicacion" id="autores_publicacion" value="<?php echo "" . $publicacion['autores'] . "" ?>" hidden>
+
+
+                        <div class="form-row">
+                                <div class="form-group col-md-5">
+                                        <label class="font-weight-bold">Nombre de autor</label>
+                                        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Introducir el nombre del autor.">
+                                </div>
+
+                                <div class="form-group col-md-2">
+                                        </br>
+                                        <button type="button" class="btn btn-primary" id="add_autor">Agregar Autor</button>
+                                </div>
+                                <div class="form-group col-md-5">
+                                        <label class="font-weight-bold">Autores</label>
+                                        <ul id="list-autores" style="list-style: none;"></ul>
+                                </div>
+                        <input type="text" class="form-control" name="autores" id="autores" value="" hidden>
+                        </div>
+
                         <li class="list-group-item">
                                 <label class="font-weight-bold">Tema</label>
                                 <input class="form-control" type="text" name="tema" value="<?php echo "" . $publicacion['tema'] . "" ?>">
@@ -37,22 +53,9 @@
                                 <input class="form-control" type="text" name="descripcion" value="<?php echo "" . $publicacion['descripcion'] . "" ?>">
                         </li>
                         <li class="list-group-item">
-                                <div class="form-row">
-
-
-
-                                        <div class="form-group col-md-1">
-                                                <label class="font-weight-bold">Fecha</label>
-                                                <input type="text" class="form-control" name="dia" value=" <?php echo "" . $publicacion['dia'] . "" ?>">
-                                        </div>
-                                        <div class="form-group col-md-1">
-                                                <label class="font-weight-bold">de </label>
-                                                <input type="text" class="form-control" name="mes" value="<?php echo "" . $publicacion['mes'] . "" ?>">
-                                        </div>
-                                        <div class="form-group col-md-1">
-                                                <label class="font-weight-bold">Creación</label>
-                                                <input type="text" class="form-control" name="anio" value="<?php echo "" . $publicacion['anio'] . "" ?>">
-                                        </div>
+                                <div class="form-group col-md-3">
+                                        <label class="font-weight-bold">Fecha</label>
+                                        <input type="date" class="form-control" name="fecha" id="fecha" value="<?php echo date('Y-m-d', strtotime($publicacion['fecha'])) ?>">
                                 </div>
                         </li>
                         <li class="list-group-item">
@@ -68,3 +71,4 @@
                 </form>
         </div>
 </div>
+<script src="<?php echo base_url(); ?>/assets/js/usuario/updatePublicacion.js"></script>

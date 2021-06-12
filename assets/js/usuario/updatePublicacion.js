@@ -1,6 +1,8 @@
 var list_autores = [];
 
 $(document).ready( function () {
+    console.log($("#fechaejem").val())
+    listaAutores();
     var nombres = [];
     $.ajax({
         method: "GET",
@@ -36,8 +38,6 @@ $(document).ready( function () {
     });
 });
 
-
-
 $("#add_autor").on('click', function (event) {
     event.preventDefault;
     var valor=document.getElementById("nombre").value;
@@ -59,8 +59,8 @@ $("#add_autor").on('click', function (event) {
     console.log( $("#autores").val());
 })
 
-$("#ver_fecha").on('click', function (event) {
-    console.log( $("#fecha").val());
+$("#ver_autores").on('click', function (event) {
+    console.log( $("#autores").val());
 })
 
 function eliminar(elemento)
@@ -74,3 +74,27 @@ function eliminar(elemento)
     }
     $("#autores").val(list_autores);
     }
+
+function listaAutores(){
+    var cadena=document.getElementById("autores_publicacion").value;
+    var arrayAutores = cadena.split(",");
+    
+    if(cadena != ""){
+        for (var i=0; i<arrayAutores.length; i++)
+        {
+            var li=document.createElement('li');
+            li.innerHTML="<button onclick='eliminar(this)' type='button' class='btn bi bi-x-square'></button>";
+            var text=document.createTextNode(arrayAutores[i]);
+            li.appendChild(text);
+            document.getElementById("list-autores").appendChild(li);
+        }
+
+        list_autores = [];
+        var el = document.getElementById("list-autores").getElementsByTagName("li");
+        for (var i=0; i<el.length; i++)
+        {
+            list_autores.push(el[i].innerText);
+        }
+        $("#autores").val(list_autores);
+    }
+}

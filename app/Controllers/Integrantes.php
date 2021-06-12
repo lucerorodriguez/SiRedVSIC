@@ -14,5 +14,4 @@ class Integrantes extends BaseController
         $integrantes = array('integrantes' => $all_integrantes);
 		return view('estructura/header').view('acciones/VerIntegrantes', $integrantes).view('estructura/footer');
     }
-
 }

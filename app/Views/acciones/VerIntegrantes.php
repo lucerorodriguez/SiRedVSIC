@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -40,28 +37,27 @@ button:hover, a:hover {
   opacity: 0.7;
 }
 </style>
-</head>
 <body>
 <br>
 <br>
 <br>
+
 <h2 style="text-align:center">Integrantes</h2>
-<?php
-      foreach ($integrantes as $integrante) :
-      ?>
-<div class="card">
-  <img src="<?php echo base_url(); ?>/public/assets/files/perfil.jpg" alt="perfil" style="width:100%">
-  <h1><?php echo  $integrante['nombre'] ?></h1>
-  <p class="title"><?php echo  $integrante['linea_investigacion'] ?></p>
-  <p><?php echo  $integrante['institucion'] ?></p>
-  <div style="margin: 24px 0;">
-    <a href="#"><i class="link fa fa-dribbble"></i></a> 
-    <a href="#"><i class="link fa fa-twitter"></i></a>  
-    <a href="#"><i class="link fa fa-linkedin"></i></a>  
-    <a href="#"><i class="link fa fa-facebook"></i></a> 
+<div class="card-columns" style="width: 100%; padding-left: 15%; padding-right: 15%;">
+  <?php
+        foreach ($integrantes as $integrante) :
+        ?>
+  <div class="card">
+    <img class="card-img-top" src="<?php echo base_url(); ?><?php echo $integrante['foto_perfil'] ?>" alt="perfil" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><?php echo  $integrante['nombre'] ?></h5>
+      <p class="card-text"><?php echo  $integrante['linea_investigacion'] ?></p>
+      <p class="card-text"><small class="text-muted"><?php echo  $integrante['institucion'] ?></small></p>
+      <p><button>Contacto</button></p>
+    </div>
+
   </div>
-  <p><button>Contacto</button></p>
+  <?php endforeach; ?>
 </div>
-<?php endforeach; ?>
+
 </body>
-</html>
