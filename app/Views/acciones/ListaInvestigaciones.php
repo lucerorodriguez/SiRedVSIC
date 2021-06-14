@@ -3,7 +3,7 @@
 </br></br></br>
 <div class="container">
 
-  <form action="<?php echo base_url(); ?>/index.php/Investigaciones/busqueda" method="POST" class="form">
+ <!-- <form action="<?php echo base_url(); ?>/index.php/Investigaciones/busqueda" method="POST" class="form">
     <div class="form-row align-items-center">
       <div class="col-sm-3 my-1">
         <input type="text" name="oracion" value="" class="form-control" placeholder="escribe algo...">
@@ -21,7 +21,7 @@
         <button class="btn btn-primary">Buscar</button>
       </div>
     </div>
-  </form>
+  </form>-->
   <br> <br>
   <table class="table" id="tb4">
     <thead>

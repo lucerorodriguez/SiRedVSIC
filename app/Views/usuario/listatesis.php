@@ -7,9 +7,9 @@
     <thead>
       <tr>
         <th scope="col">#Id</th>
-        <th scope="col">Títulosss</th>
-        <th scope="col">Autores</th>
+        <th scope="col">Tesista</th>
         <th scope="col">Tema</th>
+        <th scope="col">Descripción</th>
       </tr>
     </thead>
     <tbody>

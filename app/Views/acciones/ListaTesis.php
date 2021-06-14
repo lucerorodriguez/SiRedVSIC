@@ -6,7 +6,7 @@
     <thead>
       <tr class="bg-primary">
         <th scope="col">#</th>
-        <th scope="col">Nombre</th>
+        <th scope="col">Tesista</th>
         <th scope="col">Tema</th>
         <th scope="col">Descripción</th>
         <th scope="col"></th>

@@ -7,7 +7,7 @@
         ?>
             <div class="card" style="width: 20% !important;;">
                 <img class="card-img-top" src="<?php echo base_url(); ?><?php echo $user['foto_perfil'] ?>" alt="Card image cap">
-                </br></br></br></br>
+                </br>
                 <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#agregarfoto">
                     <i class="bi bi-person-plus">Cambiar foto</i>
                 </button>
@@ -16,7 +16,7 @@
                     <div class="input-group">
                     <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
                     <br>
-                    <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Guardar</button>
+                    <button class="btn btn-outline-secondary" type="button" id="iSnputGroupFileAddon04">Guardar</button>
                      </div>
                 </form>-->
             </div>
