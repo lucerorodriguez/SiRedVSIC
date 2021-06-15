@@ -1,3 +1,16 @@
+****///		subir archivos con ajax/Subir archivos por Ajax, Jquery, PHP y MySql
+
+	https://www.youtube.com/watch?v=rxXOOFaw3-M
+
+****///		Como habilitar y deshabilitar un botón al llenar formulario
+
+	https://www.youtube.com/watch?v=mR7Da8f_Sjc
+
+****///		validar extension de archivos en inputs type file
+
+	https://www.youtube.com/watch?v=w-5ghh1mkh8
+
+
 ****///		crear carpeta de las investigaciones
 	pagina apoyo
 	http://www.forosdelweb.com/f180/como-crear-directorio-con-codeigniter-1051011/

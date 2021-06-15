@@ -127,6 +127,28 @@ class Usuario extends BaseController
         return view('estructura/header') . view('usuario/perfil', $data_user) . view('estructura/footer');
     }
 
+    public function updatePerfil()
+    {
+        $usuariosModel = new UsuariosModel($db);
+        $request = \Config\Services::request();
+        $id_usuario = $this->session->get('id_usuario');
+        $data = array(
+            'lgac' => $request->getPostGet('lgac'),
+            'linea_investigacion' => $request->getPostGet('linea_investigacion'),
+            'proyectos_vigentes' => $request->getPostGet('proyectos_vigentes'),
+            'telefono' => $request->getPostGet('telefono'),
+            'area_adscripcion' => $request->getPostGet('area_adscripcion'),
+            'formacion_academica' => $request->getPostGet('formacion_academica'),
+            'area_conocimiento' => $request->getPostGet('area_conocimiento'),
+            'sni_nivel' => $request->getPostGet('sni_nivel'),
+            'perfil_deseable' => $request->getPostGet('perfil_deseable')
+        );
+        
+        $usuariosModel->update($id_usuario, $data);
+        
+        return $this->response->setJSON("1");
+    }
+
     public function verPerfil()
     {
         $usuariosModel = new UsuariosModel($db);
@@ -166,7 +188,8 @@ class Usuario extends BaseController
         $correo = $this->session->get('email');
         $usuario = $usuariosModel->where('correo', $correo)->findAll();
         $data_user = array('data_user' => $usuario);
-        return view('estructura/header') . view('usuario/perfil', $data_user) . view('estructura/footer');
+        $respuesta = "1";
+        return $this->response->setJSON($respuesta);
         }
     
     public function listaPublicaciones()
