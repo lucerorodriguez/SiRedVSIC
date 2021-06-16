@@ -714,9 +714,7 @@ class Usuario extends BaseController
             'id_usuario'=>$id_usuario
         );
         $sitiosModel->insert($data);
-        $all_info = $sitiosModel->where('id_usuario', $id_usuario)->findAll();
-        $sitios = array('sitios' => $all_info);
-        return view('estructura/header').view('usuario/listasitios', $sitios).view('estructura/footer');
+        return $this->response->setJSON("1");
     }
     public function verSitio($id)
     {
