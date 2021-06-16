@@ -23,7 +23,7 @@ $(document).ready( function () {
 
 function validar(){
     var contenido = $("#archivo").val();
-    var extenciones = /(.DOC|.doc|.PDF|.pdf)$/i;
+    var extenciones = /(.DOC|.doc|.docx|.PDF|.pdf)$/i;
     if(!extenciones.exec(contenido)){
         alert("Por favor asegurate de seleccionar un archivo con extension .doc o .pdf");
         $("#archivo").val("");

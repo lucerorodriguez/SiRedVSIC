@@ -1,6 +1,6 @@
 <div class="container">
 <br><br><br><br>
-    <form action="<?php echo base_url(); ?>/index.php/usuario/guardarSitio" method="POST" class="form" enctype="multipart/form-data">
+    <form id="form_crearSitio" method="POST" class="form" enctype="multipart/form-data">
         <div class="row">
             <div class="col">
                 <label class="font-weight-bold" for="inputAddress">Nombre del Sitio</label>
@@ -25,8 +25,9 @@
         <br>
         <div class="text-right">
         <a class="btn btn-danger" href="<?php echo base_url(); ?>/index.php/Usuario/listaSitios" role="button">Cancelar</a>
-        <button type="submit" class="btn btn-primary">Crear</button>
+        <button id="button_crearSitio" type="button" class="btn btn-primary">Crear</button>
         </div>
     </form>
 </div>
 </br>
+<script src="<?php echo base_url(); ?>/assets/js/sitio/crearSitio.js"></script>
