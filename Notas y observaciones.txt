@@ -1,3 +1,11 @@
+****///		Redireccionar a una pagina mediante javascript
+
+	https://es.stackoverflow.com/questions/18119/como-redireccionar-a-una-p%C3%A1gina-seg%C3%BAn-la-respuesta-recibida-de-php-en-ajax
+
+****///		Mostrar y ocultar contenido con javascript aplicado en div
+
+	https://www.jose-aguilar.com/blog/display-content-javascript/
+
 ****///		subir archivos con ajax/Subir archivos por Ajax, Jquery, PHP y MySql
 
 	https://www.youtube.com/watch?v=rxXOOFaw3-M

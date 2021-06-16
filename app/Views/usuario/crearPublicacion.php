@@ -1,6 +1,6 @@
 </br></br></br>
 <div class="container">
-    <form action="<?php echo base_url(); ?>/index.php/usuario/guardarPublicacion" method="POST" class="form" id="formulario">
+    <form id="form_crearPublicacion" action="<?php echo base_url(); ?>/index.php/usuario/guardarPublicacion" method="POST" class="form">
         <div class="form-group">
             <label class="font-weight-bold" for="inputAddress">Título</label>
             <input type="text" class="form-control" name="titulo">
@@ -57,9 +57,9 @@
 
         <div class="text-right">
         <a class="btn btn-danger" href="<?php echo base_url(); ?>/index.php/Usuario/listaPublicaciones" role="button">Cancelar</a>
-        <button type="submit" class="btn btn-primary">Crear</button>
+        <button type="button" id="boton_crearPublicacion" class="btn btn-primary">Crear</button>
         </div>
     </form>
 </div>
-<script src="<?php echo base_url(); ?>/assets/js/usuario/crearPublicacion.js"></script>
+<script src="<?php echo base_url(); ?>/assets/js/publicacion/crearPublicacion.js"></script>
 </br>

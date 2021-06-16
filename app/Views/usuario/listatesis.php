@@ -29,4 +29,11 @@
     </tbody>
   </table>
 </div>
-<script src="<?php echo base_url(); ?>/assets/js/tesis/listaTesis.js"></script>
+<script>
+
+  $(document).ready( function () {
+      $('#tb3').DataTable({
+          language: Lenguaje
+      });
+  })
+</script>
