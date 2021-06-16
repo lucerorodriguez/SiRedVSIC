@@ -10,6 +10,7 @@
         <th scope="col">Tesista</th>
         <th scope="col">Tema</th>
         <th scope="col">Descripción</th>
+        <th scope="col"></th>
       </tr>
     </thead>
     <tbody>
@@ -22,12 +23,10 @@
           <?php echo "<td>" . $tes['tesista'] . "</td>" ?>
           <?php echo "<td>" . $tes['tema_tesis'] . "</td>" ?>
           <?php echo "<td>" . $tes['descripcion'] . "</td>" ?>
+          <td><a class="btn btn-primary" href="<?php echo base_url(); ?>/index.php/Usuario/verTesis/<?php echo $tes['id_tesis'] ?>" role="button">Abrir</a></td>
         </tr>
       <?php endforeach; ?>
     </tbody>
   </table>
-  <script>
-
-</script>
 </div>
 <script src="<?php echo base_url(); ?>/assets/js/tesis/listaTesis.js"></script>

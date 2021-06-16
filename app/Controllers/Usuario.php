@@ -208,62 +208,62 @@ class Usuario extends BaseController
         $investigaciones = array('investigaciones' => $all_info);
         return view('estructura/header').view('usuario/listainvestigaciones', $investigaciones).view('estructura/footer');
     }
-    public function listaTesis()
-    {
+    ////Apartado de Tesis
+    public function listaTesis(){
         $tesisModel = new TesisModel($db);
         $id_usuario = $this->session->get('id_usuario');
         $all_info = $tesisModel->where('id_usuario', $id_usuario)->findAll();
         $tesis = array('tesis' => $all_info);
         return view('estructura/header').view('usuario/listatesis', $tesis).view('estructura/footer');
-    }
-    public function verTesis($id)
-	{
+        }
+    public function crearTesis(){
+        return view('estructura/header').view('usuario/crearTesis').view('estructura/footer');
+        }
+    public function verTesis($id){
         $tesisModel = new TesisModel($db);
         $all_info = $tesisModel->find($id);
         $tesis = array('tesis' => $all_info);
 		return view('estructura/header').view('usuario/VerTesis', $tesis).view('estructura/footer');
-    }
+        }
 
-    public function guardarTesis(){
-        $id_usuario = $this->session->get('id_usuario');
-        $repositorio = './uploads/tesis_'.$id_usuario."/";
-        if (!file_exists($repositorio)) {
-            mkdir($repositorio, 0777, true);
+    public function saveTesis(){
+            $id_usuario = $this->session->get('id_usuario');
+            $repositorio = './uploads/tesis_'.$id_usuario."/";
+            if (!file_exists($repositorio)) {
+                mkdir($repositorio, 0777, true);
+            }
+            $fecha = date("Y-m-d H:i:s");
+            $tesisModel = new TesisModel($db);
+            $request = \Config\Services::request();
+            $id_usuario = $this->session->get('id_usuario');
+            $ruta = '';
+            $name = '';
+            $file = $this->request->getFile('archivo');
+            if ($file->isValid() && ! $file->hasMoved())
+            {
+                $name = $file->getName();
+                $newName = $file->getRandomName();
+                $nombre = strval($id_usuario).'_'.$newName;
+                $file->move($repositorio, $nombre);
+                $ruta = $repositorio.$nombre;
+            }
+            $data = array(
+                'asesor'=>$request->getPostGet('asesor'),
+                'tesista'=>$request->getPostGet('tesista'),
+                'tema_tesis'=>$request->getPostGet('tema_tesis'),
+                'area_conocimiento'=>$request->getPostGet('area_conocimiento'),
+                'descripcion'=>$request->getPostGet('descripcion'),
+                'comentarios'=>$request->getPostGet('comentarios'),
+                'id_usuario'=> $id_usuario,
+                'ruta_documento'=> $ruta,
+                'nombre_documento'=> $name
+            );
+            $tesisModel->insert($data);
+    
+            return $this->response->setJSON("1");
         }
-        $fecha = date("Y-m-d H:i:s");
-        $tesisModel = new TesisModel($db);
-        $request = \Config\Services::request();
-        $id_usuario = $this->session->get('id_usuario');
-        $ruta = '';
-        $name = '';
-        $file = $this->request->getFile('archivo');
-        if ($file->isValid() && ! $file->hasMoved())
-        {
-            $name = $file->getName();
-            $newName = $file->getRandomName();
-            $nombre = strval($id_usuario).'_'.$newName;
-            $file->move($repositorio, $nombre);
-            $ruta = $repositorio.$nombre;
-        }
-        $data = array(
-            'asesor'=>$request->getPostGet('asesor'),
-            'tesista'=>$request->getPostGet('tesista'),
-            'tema_tesis'=>$request->getPostGet('tema_tesis'),
-            'area_conocimiento'=>$request->getPostGet('area_conocimiento'),
-            'descripcion'=>$request->getPostGet('descripcion'),
-            'comentarios'=>$request->getPostGet('comentarios'),
-            'id_usuario'=> $id_usuario,
-            'ruta_documento'=> $ruta,
-            'nombre_documento'=> $name
-        );
-        $tesisModel->insert($data);
 
-        $all_info = $tesisModel->where('id_usuario', $id_usuario)->findAll();
-        $tesis = array('tesis' => $all_info);
-        return view('estructura/header').view('usuario/listatesis', $tesis).view('estructura/footer');
-        }
-    public function eliminarTesis()
-    {
+    public function eliminarTesis(){
         $tesisModel = new TesisModel($db);
         $request = \Config\Services::request();
         $id = $request->getPostGet('id_tes');
@@ -272,22 +272,10 @@ class Usuario extends BaseController
             unlink($ruta);
             $tesisModel->where('id_tesis', $id)->delete();
         }
-        $id_usuario = $this->session->get('id_usuario');
-        $all_info = $tesisModel->where('id_usuario', $id_usuario)->findAll();
-        $tesis = array('tesis' => $all_info);
-        return view('estructura/header').view('usuario/listatesis', $tesis).view('estructura/footer');
-    }
+        return $this->response->setJSON("1");
+        }
 
-    public function modificarTesis($id)
-    {
-        $tesisModel = new TesisModel($db);
-        $all_info = $tesisModel->find($id);
-        $tesis = array('tesis' => $all_info);
-		return view('estructura/header').view('usuario/updateTesis', $tesis).view('estructura/footer');
-    }
-
-    public function updateTesis()
-    {
+    public function updateTesis(){
         $TesisModel = new TesisModel($db);
 
         $request = \Config\Services::request();
@@ -331,21 +319,17 @@ class Usuario extends BaseController
         $id_tesis = $request->getPostGet('id_tesis');
         $TesisModel->update( $id_tesis, $data);
 
-        $all_info = $TesisModel->where('id_usuario', $id_usuario)->findAll();
-        $tesis = array('tesis' => $all_info);
-        return view('estructura/header').view('usuario/listatesis', $tesis).view('estructura/footer');
-    }
+        return $this->response->setJSON("1");
+        }
 
-    public function getAutores()
-	{
+    public function getAutores(){
         $autoresModel = new AutoresModel($db);
         $all_Autores = $autoresModel->findAll();
         $autores = array('autores' => $all_Autores);
 		return $this->response->setJSON($autores);
-    }
+        }
 
-    public function autorPorNombre()
-	{
+    public function autorPorNombre(){
         $request = \Config\Services::request();
         $nombre = $request->getPostGet('nombre');
 
@@ -353,17 +337,15 @@ class Usuario extends BaseController
         $datos_autor = $autoresModel->where('nombre', $nombre)->findAll();
         $autor = array('autor' => $datos_autor);
 		return $this->response->setJSON($datos_autor);
-    }
+        }
     
     public function crearPublicacion(){
-        return view('estructura/header').view('usuario/crearPublicacion').view('estructura/footer');
+    return view('estructura/header').view('usuario/crearPublicacion').view('estructura/footer');
     }
     public function crearInvestigacion(){
         return view('estructura/header').view('usuario/crearInvestigacion').view('estructura/footer');
     }
-    public function crearTesis(){
-        return view('estructura/header').view('usuario/crearTesis').view('estructura/footer');
-    }
+    
 
 
     ////insertar en la base de datos la publicacion

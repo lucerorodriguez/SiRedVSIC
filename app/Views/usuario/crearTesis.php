@@ -1,7 +1,7 @@
 <body>
     </br></br></br>
     <div class="container">
-        <form action="<?php echo base_url(); ?>/index.php/usuario/guardarTesis" method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
+        <form id="form_tesis" action="<?php echo base_url(); ?>/index.php/usuario/guardarTesis" method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
             <div class="form-row">
             <div class="form-group col-md-4">
                     <label class="font-weight-bold">Nombre asesor</label>
@@ -47,11 +47,11 @@
 
             <div class="mb-3">
                 <label for="formFileMultiple" class="form-label font-weight-bold">Seleccione el archivo que desea subir a la plataforma</label>
-                <input type="file" name="archivo"/>
+                <input type="file" name="archivo" id="archivo" onchange="validar()"/>
             </div>
             
-            <a class="btn btn-danger" href="<?php echo base_url(); ?>/index.php/Inicio" role="button">Cancelar</a>
-            <button class="btn btn-primary" type="submit">Guardar</button>
+            <a class="btn btn-danger" href="<?php echo base_url(); ?>/index.php/Usuario/listaTesis" role="button">Cancelar</a>
+            <button class="btn btn-primary" type="button" id="saveTesis">Guardar</button>
         </form>
     </div>
 
@@ -77,3 +77,4 @@
         }, false);
     })();
 </script>
+<script src="<?php echo base_url(); ?>/assets/js/tesis/crearTesis.js"></script>
