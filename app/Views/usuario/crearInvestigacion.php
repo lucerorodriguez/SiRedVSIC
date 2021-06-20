@@ -1,7 +1,7 @@
 
 <div class="container">
 <br><br><br><br>
-    <form action="<?php echo base_url(); ?>/index.php/usuario/guardarInvestigacion" method="POST" enctype="multipart/form-data">
+    <form id="form_Investigacion" method="POST" enctype="multipart/form-data">
         <div class="form-group">
             <label class="font-weight-bold" for="inputAddress">Nombre del Proyecto</label>
             <input type="text" class="form-control" name="nombre_proyecto">
@@ -29,14 +29,15 @@
 
         <div class="mb-3">
             <label for="formFileMultiple" class="form-label font-weight-bold">Seleccione los archivos que desea subir a la plataforma</label>
-            <input type="file" name="archivo[]" multiple/>
+            <input type="file" id="archivo" name="archivo[]" multiple accept="audio/*,video/*,image/*,.pdf,.docx"/>
         </div>
 
         <div class="text-right">
         <a class="btn btn-danger" href="<?php echo base_url(); ?>/index.php/Usuario/listaInvestigaciones" role="button">Cancelar</a>
-        <button type="submit" class="btn btn-primary">Crear</button>
+        <button type="button" id="botn_guardarInvestigacion" class="btn btn-primary">Crear</button>
         </div>
     </form>
     
 </div>
 </br>
+<script src="<?php echo base_url(); ?>/assets/js/investigacion/crearInvestigacion.js"></script>

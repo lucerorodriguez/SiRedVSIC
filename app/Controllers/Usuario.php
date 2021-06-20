@@ -193,14 +193,7 @@ class Usuario extends BaseController
         return $this->response->setJSON($respuesta);
     }
 
-    public function listaInvestigaciones()
-    {
-        $investigacionModel = new InvestigacionModel($db);
-        $id_usuario = $this->session->get('id_usuario');
-        $all_info = $investigacionModel->where('id_usuario', $id_usuario)->findAll();
-        $investigaciones = array('investigaciones' => $all_info);
-        return view('estructura/header') . view('usuario/listainvestigaciones', $investigaciones) . view('estructura/footer');
-    }
+    
 ////Apartado de Tesis
     public function listaTesis()
     {
@@ -445,16 +438,20 @@ class Usuario extends BaseController
 ////fin de Apartado de Publicaciones
 
 ////Apartado de Investigacion
+
+    public function listaInvestigaciones()
+    {
+        $investigacionModel = new InvestigacionModel($db);
+        $id_usuario = $this->session->get('id_usuario');
+        $all_info = $investigacionModel->where('id_usuario', $id_usuario)->findAll();
+        $investigaciones = array('investigaciones' => $all_info);
+        return view('estructura/header') . view('usuario/listainvestigaciones', $investigaciones) . view('estructura/footer');
+    }
     public function crearInvestigacion()
     {
         return view('estructura/header') . view('usuario/crearInvestigacion') . view('estructura/footer');
     }
 
-
-
-    ////insertar en la base de datos la publicacion
-
-    ////insertar en la base de datos la investigación
     public function guardarInvestigacion()
     {
         $id_usuario = $this->session->get('id_usuario');
@@ -505,10 +502,7 @@ class Usuario extends BaseController
                 }
             }
         }
-
-        $all_info = $investigacionModel->where('id_usuario', $id_usuario)->findAll();
-        $investigaciones = array('investigaciones' => $all_info);
-        return view('estructura/header') . view('usuario/listainvestigaciones', $investigaciones) . view('estructura/footer');
+        return $this->response->setJSON("1");
     }
     public function guardarArchivos()
     {
@@ -524,7 +518,7 @@ class Usuario extends BaseController
         }
 
         if ($files = $this->request->getFiles()) {
-            foreach ($files['archivo'] as $arc) {
+            foreach ($files['new_archivo'] as $arc) {
                 if ($arc->isValid() && !$arc->hasMoved()) {
                     $name = $arc->getName();
                     $newName = $arc->getRandomName();
@@ -541,10 +535,7 @@ class Usuario extends BaseController
                 }
             }
         }
-        $list_archivos = $ArchivosModel->where('id_investigacion', $id)->findAll();
-        $data['id_investigacion'] = $id;
-        $data['archivos'] = $list_archivos;
-        return view('estructura/header') . view('usuario/gestionarArchivos', $data) . view('estructura/footer');
+        return $this->response->setJSON("1");
     }
 
     
@@ -561,24 +552,7 @@ class Usuario extends BaseController
         $data['archivos'] = $list_archivos;
         return view('estructura/header') . view('usuario/VerInvestigacion', $data) . view('estructura/footer');
     }
-
-
-
-    public function gestionarArchivos($id)
-    {
-        $data['id_investigacion'] = $id;
-        $ArchivosModel = new ArchivosModel($db);
-        $list_archivos = $ArchivosModel->where('id_investigacion', $id)->findAll();
-        $data['archivos'] = $list_archivos;
-        return view('estructura/header') . view('usuario/gestionarArchivos', $data) . view('estructura/footer');
-    }
-
-    public function downloadArchivo()
-    {
-        $request = \Config\Services::request();
-        $ruta = $request->getPostGet('ruta');
-        return $this->response->download($ruta, null);
-    }
+    
     public function eliminarArchivo()
     {
         $ArchivosModel = new ArchivosModel($db);
@@ -588,25 +562,8 @@ class Usuario extends BaseController
             unlink($ruta);
             $ArchivosModel->where('ruta', $ruta)->delete();
         }
-        $id = $request->getPostGet('id_in');
-        $data['id_investigacion'] = $id;
-        $list_archivos = $ArchivosModel->where('id_investigacion', $id)->findAll();
-        $data['archivos'] = $list_archivos;
-        return view('estructura/header') . view('usuario/gestionarArchivos', $data) . view('estructura/footer');
+        return $this->response->setJSON("1");
     }
-
-    public function modificarInvestigacion($id)
-    {
-        $investigacionModel = new InvestigacionModel($db);
-        $all_info = $investigacionModel->find($id);
-        $data['investigacion'] = $all_info;
-        $ArchivosModel = new ArchivosModel($db);
-        $list_archivos = $ArchivosModel->where('id_investigacion', $id)->findAll();
-        $data['archivos'] = $list_archivos;
-        return view('estructura/header') . view('usuario/updateInvestigacion', $data) . view('estructura/footer');
-    }
-
-
 
     public function updateInvestigacion()
     {
@@ -646,12 +603,8 @@ class Usuario extends BaseController
                 }
             }
         }
-        $all_info = $investigacionModel->find($id_investigacion);
-        $data['investigacion'] = $all_info;
-        $ArchivosModel = new ArchivosModel($db);
-        $list_archivos = $ArchivosModel->where('id_investigacion', $id_investigacion)->findAll();
-        $data['archivos'] = $list_archivos;
-        return view('estructura/header') . view('usuario/VerInvestigacion', $data) . view('estructura/footer');
+        
+        return $this->response->setJSON("1");
     }
 
 
@@ -670,12 +623,17 @@ class Usuario extends BaseController
                 $ArchivosModel->where('ruta', $archivo['ruta'])->delete();
             }
         }
-
-        $id_usuario = $this->session->get('id_usuario');
-        $all_info = $investigacionModel->where('id_usuario', $id_usuario)->findAll();
-        $investigaciones = array('investigaciones' => $all_info);
-        return view('estructura/header') . view('usuario/listainvestigaciones', $investigaciones) . view('estructura/footer');
+        return $this->response->setJSON("1");
     }
+////Fin de apartado Investigacion
+
+    public function downloadArchivo()
+    {
+        $request = \Config\Services::request();
+        $ruta = $request->getPostGet('ruta');
+        return $this->response->download($ruta, null);
+    }
+
 
     public function mensaje()
     {
@@ -692,7 +650,7 @@ class Usuario extends BaseController
     }
 
 
-    //Vista Sitios de Interes//
+////Apartado de Sitios
     public function listaSitios()
     {
         $sitiosModel = new SitiosModel($db);
@@ -764,4 +722,5 @@ class Usuario extends BaseController
         $sitios = array('sitios' => $all_info);
         return view('estructura/header') . view('usuario/listasitios', $sitios) . view('estructura/footer');
     }
+////Fin de Apartado de Sitios
 }

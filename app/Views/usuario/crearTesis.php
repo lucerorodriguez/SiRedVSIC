@@ -47,7 +47,7 @@
 
             <div class="mb-3">
                 <label for="formFileMultiple" class="form-label font-weight-bold">Seleccione el archivo que desea subir a la plataforma</label>
-                <input type="file" name="archivo" id="archivo" onchange="validar()"/>
+                <input type="file" name="archivo" id="archivo" onchange="validar()" accept=".pdf,.docx" />
             </div>
             
             <a class="btn btn-danger" href="<?php echo base_url(); ?>/index.php/Usuario/listaTesis" role="button">Cancelar</a>

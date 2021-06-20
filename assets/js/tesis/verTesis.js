@@ -1,5 +1,5 @@
 
-$(document).ready( function () {
+$(document).ready(function () {
   var tesis = $("#asesor").val();
   var tesista = $("#tesista").val();
   var tema_tesis = $("#tema_tesis").val();
@@ -11,21 +11,21 @@ $(document).ready( function () {
   $("#elimininarTesis").on('click', function (event) {
     var data = new FormData($("#form_eliminar")[0]);
     $.ajax({
-        method: "POST",
-        url:  _appBaseURL+"/usuario/eliminarTesis",
-        data: data,
-        contentType: false,
-        processData: false,
-        success: function (data) {
-            setTimeout(alerta(), 8000);
-            function alerta() {
-                Swal.fire(
-                    'Echo!',
-                    'Se elimino la informacion!'
-                  )
-            }
-            window.location.replace(_appBaseURL+"/usuario/listaTesis");
+      method: "POST",
+      url: _appBaseURL + "/usuario/eliminarTesis",
+      data: data,
+      contentType: false,
+      processData: false,
+      success: function (data) {
+        setTimeout(alerta(), 8000);
+        function alerta() {
+          Swal.fire(
+            'Echo!',
+            'Se elimino la informacion!'
+          )
         }
+        window.location.replace(_appBaseURL + "/usuario/listaTesis");
+      }
     });
   })
 
@@ -52,31 +52,31 @@ $(document).ready( function () {
   $("#boton_GuardarCambios").on('click', function (event) {
     var data = new FormData($("#form_updateTesis")[0]);
     $.ajax({
-        method: "POST",
-        url:  _appBaseURL+"/usuario/updateTesis",
-        data: data,
-        contentType: false,
-        processData: false,
-        success: function (data) {
-            setTimeout(alerta(), 8000);
-            function alerta() {
-                Swal.fire(
-                    'Echo!',
-                    'Se guardaron los cambios!'
-                  )
-            }
-            location.reload();
+      method: "POST",
+      url: _appBaseURL + "/usuario/updateTesis",
+      data: data,
+      contentType: false,
+      processData: false,
+      success: function (data) {
+        setTimeout(alerta(), 8000);
+        function alerta() {
+          Swal.fire(
+            'Echo!',
+            'Se guardaron los cambios!'
+          )
         }
+        location.reload();
+      }
     });
   })
 
 });
 
-function validar(){
+function validar() {
   var contenido = $("#archivo").val();
   var extenciones = /(.DOC|.doc|.docx|.PDF|.pdf)$/i;
-  if(!extenciones.exec(contenido)){
-      alert("Por favor asegurate de seleccionar un archivo con extension .doc o .pdf");
-      $("#archivo").val("");
+  if (!extenciones.exec(contenido)) {
+    alert("Por favor asegurate de seleccionar un archivo con extension .doc o .pdf");
+    $("#archivo").val("");
   }
 }

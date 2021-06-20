@@ -1,3 +1,20 @@
+****///		Agregar / eliminar fila de una tabla
+
+	https://www.it-swarm-es.com/es/javascript/agregar-eliminar-fila-de-una-tabla/1068873665/
+
+****///		uso de funcion onClick y pasarle parametros
+
+	https://es.stackoverflow.com/questions/131739/como-pasar-un-string-a-una-funci%C3%B3n-onclick
+
+****///		Atributos de input file
+
+	https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file
+
+****///		Validar input file multiple
+
+	https://www.youtube.com/watch?v=3XBOa20m9Vg
+
+
 ****///		Redireccionar a una pagina mediante javascript
 
 	https://es.stackoverflow.com/questions/18119/como-redireccionar-a-una-p%C3%A1gina-seg%C3%BAn-la-respuesta-recibida-de-php-en-ajax
