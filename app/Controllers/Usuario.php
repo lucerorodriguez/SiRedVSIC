@@ -686,21 +686,14 @@ class Usuario extends BaseController
         $sitio = array('sitio' => $all_info);
         return view('estructura/header') . view('usuario/VerSitio', $sitio) . view('estructura/footer');
     }
-    public function eliminarSitio($id)
+    public function eliminarSitio()
     {
         $sitiosModel = new SitiosModel($db);
+        $request = \Config\Services::request();
+        $id = $request->getPostGet('id_sitio');
+
         $sitiosModel->where('id_sitio', $id)->delete();
-        $id_usuario = $this->session->get('id_usuario');
-        $all_info = $sitiosModel->where('id_usuario', $id_usuario)->findAll();
-        $sitios = array('sitios' => $all_info);
-        return view('estructura/header') . view('usuario/listasitios', $sitios) . view('estructura/footer');
-    }
-    public function modificarSitio($id)
-    {
-        $sitioModel = new SitiosModel($db);
-        $all_info = $sitioModel->find($id);
-        $sitio = array('sitio' => $all_info);
-        return view('estructura/header') . view('usuario/updateSitio', $sitio) . view('estructura/footer');
+        return $this->response->setJSON("1");
     }
     public function updateSitio()
     {
@@ -711,16 +704,12 @@ class Usuario extends BaseController
             'nombre_sitio' => $request->getPostGet('nombre_sitio'),
             'categoria' => $request->getPostGet('categoria'),
             'descripcion' => $request->getPostGet('descripcion'),
-            'url' => $request->getPostGet('url')
+            'url' => $request->getPostGet('url_name')
 
         );
         $id_sitio = $request->getPostGet('id_sitio');
         $sitioModel->update($id_sitio, $data);
-        $sitioModel = new SitiosModel($db);
-        $id_usuario = $this->session->get('id_usuario');
-        $all_info = $sitioModel->where('id_usuario', $id_usuario)->findAll();
-        $sitios = array('sitios' => $all_info);
-        return view('estructura/header') . view('usuario/listasitios', $sitios) . view('estructura/footer');
+        return $this->response->setJSON("1");
     }
 ////Fin de Apartado de Sitios
 }
