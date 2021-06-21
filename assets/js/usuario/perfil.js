@@ -1,38 +1,71 @@
-$(document).ready( function () {
-    $("#guardarFoto").prop('disabled', true);
+$(document).ready(function () {
+    var nivel = document.getElementById("sni_nivel");
+    var lista = ["Candidato a investigador nacioanl", "Investigador nacional nivel I", "Investigador nacional nivel II", "Investigador nacional nivel III", "Investigador nacional emérito"];
+    var valor = $("#initialVal_sni_nivel").val();
+    $("#sni_nivel").prepend('<option value=' + valor + '>' + valor + '</option>');
+    $.each(lista, function (index, ele) {
+        if (valor != ele) {
+            option = document.createElement("option");
+            option.value = ele;
+            option.text = ele;
+            nivel.appendChild(option);
+        }
+    });
 });
 
-function validar(){
+function validar() {
     var contenido = $("#archivo").val();
     var extenciones = /(.jpg|.jpeg|.png)$/i;
-    if(!extenciones.exec(contenido)){
+    if (!extenciones.exec(contenido)) {
         alert("Por favor asegurate de seleccionar un archivo con extension .jpg|.jpeg|.png ");
         $("#archivo").val("");
         $("#guardarFoto").prop('disabled', true);
-    }else {
+    } else {
         $("#guardarFoto").prop('disabled', false);
     }
 }
 
 $("#guardarFoto").on('click', function (event) {
     var data = new FormData($("#formulario")[0]);
-    $.ajax({
-        method: "POST",
-        url:  _appBaseURL+"/usuario/AgregarFoto",
-        data: data,
-        contentType: false,
-        processData: false,
-        success: function (data) {
-            location.reload();
-        }
-    });
+    if ($("#archivo").val() != "") {
+        $.ajax({
+            method: "POST",
+            url: _appBaseURL + "/usuario/AgregarFoto",
+            data: data,
+            contentType: false,
+            processData: false,
+            success: function (data) {
+                location.reload();
+            }
+        });
+    }
 })
 
-$("#guardarCambios").on('click', function (event) {
+$("#cerrar_modalX").on('click', function (event) {
+    $("#archivo").val("");
+})
+
+$("#cerrar_modalCancelar").on('click', function (event) {
+    $("#archivo").val("");
+})
+
+$("#modificarPerfil").on('click', function (event) {
+    var div = document.getElementById('update_perfil');
+    div.style.display = '';
+    var div = document.getElementById('ver_perfil');
+    div.style.display = 'none';
+})
+
+$("#cancelar_updatePerfil").on('click', function (event) {
+    location.reload();
+})
+
+
+$("#guardar_cambiosPerfil").on('click', function (event) {
     var data = new FormData($("#formularioCambios")[0]);
     $.ajax({
         method: "POST",
-        url:  _appBaseURL+"/usuario/updatePerfil",
+        url: _appBaseURL + "/usuario/updatePerfil",
         data: data,
         contentType: false,
         processData: false,
@@ -42,21 +75,9 @@ $("#guardarCambios").on('click', function (event) {
                 Swal.fire(
                     'Echo!',
                     'Los cambios fueron guardados correctamente!'
-                  )
+                )
             }
             location.reload();
         }
     });
-})
-
-$("#cancelarCambios").on('click', function (event) {
-    $("#form-1").val($("#1").val());
-    $("#form-2").val($("#2").val());
-    $("#form-3").val($("#3").val());
-    $("#form-4").val($("#4").val());
-    $("#form-5").val($("#5").val());
-    $("#form-6").val($("#6").val());
-    $("#form-7").val($("#7").val());
-    $("#form-8").val($("#8").val());
-    $("#form-9").val($("#9").val());
 })
