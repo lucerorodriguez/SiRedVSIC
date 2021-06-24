@@ -1,3 +1,8 @@
+****///		Primer letra en mayusculas javascript
+
+	https://www.freecodecamp.org/espanol/news/como-poner-en-mayuscula-la-primera-letra-del-string-javascript/
+
+
 ****///		Agregar / eliminar fila de una tabla
 
 	https://www.it-swarm-es.com/es/javascript/agregar-eliminar-fila-de-una-tabla/1068873665/
